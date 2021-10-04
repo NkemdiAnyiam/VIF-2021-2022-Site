@@ -173,7 +173,7 @@ address {
 .about-viz__paragraphs,
 .for-industry__paragraphs,
 .about-vif__paragraphs,
-.questions__paragraphs {
+.questions__answer {
   display: flex;
   flex-direction: column;
   gap: 1.8rem;
@@ -183,7 +183,7 @@ address {
 .about-viz__paragraphs p,
 .for-industry__paragraphs p,
 .about-vif__paragraphs p,
-.questions__paragraphs p {
+.questions__answer p {
   font-size: 1.8rem;
   line-height: 1.7;
 }
@@ -384,7 +384,7 @@ address {
   grid-area: questions;
 }
 
-.questions__company-questions {
+.questions__employer-questions {
   margin-top: 6rem;
 }
 
@@ -393,7 +393,7 @@ address {
   font-size: 3.6rem;
 }
 
-.questions__question-blocks {
+.questions__qa-blocks {
   display: flex;
   flex-direction: column;
   gap: 3.6rem;
@@ -404,8 +404,7 @@ address {
   overflow: hidden;
 }
 
-.questions__heading-tertiary-container {
-  min-height: 7rem;
+.questions__header {min-height: 7rem;
   background-color: var(--color-secondary-darkest);
   color: var(--color-gray-lightest);
   padding: 1rem 2rem;
@@ -413,13 +412,15 @@ address {
 
   display: flex;
   align-items: center;
+  gap: 5px;
 }
 
 .questions__heading-tertiary {
   font-size: 2.4rem;
+  flex: 1;
 }
 
-.questions__paragraphs {
+.questions__answer {
   padding: 2rem;
   background-color: var(--color-tertiary-lightest);
   height: 100%;
@@ -433,7 +434,34 @@ div.collapsed {
   padding: 0;
 }
 
-.questions__paragraphs p.indent {
+.expand-btn {
+  width: 38px;
+  height: 15px;
+  margin-right: 0.5rem;
+  background-color: transparent;
+}
+
+.expand-btn:hover {
+  cursor: pointer;
+}
+
+.expand-btn > div {
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 100%, 30% 100%, 50% 60%, 70% 100%, 100% 100%, 50% 0);
+  background-color: var(--color-primary-lightest);
+  transition: all 0.1s;
+}
+
+.expand-btn:hover > div {
+  background-color: var(--color-primary-light);
+}
+
+.expand-btn.expand > div {
+  clip-path: polygon(0 0, 30% 0, 50% 40%, 70% 0, 100% 0, 50% 100%);
+}
+
+.questions__answer p.indent {
   padding-left: 2rem;
 }
 

@@ -12,6 +12,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+
+  <script type="module" defer src="./scripts/index.js"></script>
 </head>
 
 <body>
@@ -37,13 +39,17 @@
         <div class="questions__student-questions">
           <h2 class="questions__heading-secondary">Students</h2>
 
-          <div class="questions__question-blocks">
+          <div class="questions__qa-blocks">
+            <!-- S Q1 -->
             <div class="questions__question-block">
-              <div class="questions__heading-tertiary-container">
+              <div class="questions__header">
                 <h3 class="questions__heading-tertiary">1. Do I need to register to attend the Industries Fair?</h3>
+                <button class="expand-btn expand">
+                  <div></div>
+                </button>
               </div>
 
-              <div class="questions__paragraphs">
+              <div class="questions__answer collapsed">
                 <p>
                   YES. You must register <a href="#" , class="link link--alt-color-2" , target="_blank">here</a>.
                 </p>
@@ -63,12 +69,16 @@
 
             </div>
 
+            <!-- S Q2 -->
             <div class="questions__question-block">
-              <div class="questions__heading-tertiary-container">
+              <div class="questions__header">
                 <h3 class="questions__heading-tertiary">2. What is the dress code?</h3>
+                <button class="expand-btn expand">
+                  <div></div>
+                </button>
               </div>
 
-              <div class="questions__paragraphs">
+              <div class="questions__answer collapsed">
                 <p>
                   You should wear clothes that are professionally appropriate for the position for which you are
                   applying.
@@ -77,12 +87,16 @@
               </div>
             </div>
 
+            <!-- S Q3 -->
             <div class="questions__question-block">
-              <div class="questions__heading-tertiary-container">
+              <div class="questions__header">
                 <h3 class="questions__heading-tertiary">3. Can I volunteer to help with the Industries Fair?</h3>
+                <button class="expand-btn expand">
+                  <div></div>
+                </button>
               </div>
 
-              <div class="questions__paragraphs">
+              <div class="questions__answer collapsed">
                 <p>
                   Absolutely! Student volunteers are essential for the Industry Fair to run smoothly.
                 </p>
@@ -99,12 +113,16 @@
               </div>
             </div>
 
+            <!-- S Q4 -->
             <div class="questions__question-block">
-              <div class="questions__heading-tertiary-container">
+              <div class="questions__header">
                 <h3 class="questions__heading-tertiary">4. Are classes cancelled for the Industries Fair?</h3>
+                <button class="expand-btn expand">
+                  <div></div>
+                </button>
               </div>
 
-              <div class="questions__paragraphs">
+              <div class="questions__answer collapsed">
                 <p>
                   Though classes are not canceled, Career Fairs can be considered an excused absence under Rule 07 of
                   the
@@ -135,30 +153,39 @@
           </div>
         </div>
 
-        <div class="questions__company-questions">
+        <div class="questions__employer-questions">
           <h2 class="questions__heading-secondary">Employers</h2>
 
-          <div class="questions__question-blocks">
+          <div class="questions__qa-blocks">
+            <!-- E Q1 -->
             <div class="questions__question-block">
-              <div class="questions__heading-tertiary-container">
-                <h3 class="questions__heading-tertiary">1. Can we review student resumes and portfolios prior to the
-                  Industries Fair so we can conduct interviews while we’re there?
-                </h3>
+              <div class="questions__header">
+                <h3 class="questions__heading-tertiary">
+                  1. Can we review student resumes and portfolios prior to the
+                      Industries Fair so we can conduct interviews while we’re there?</h3>
+                <button class="expand-btn expand">
+                  <div></div>
+                </button>
               </div>
 
-              <div class="questions__paragraphs">
+              <div class="questions__answer collapsed">
                 <p>
-                  Certainly! Please include this request on your <a href="#" , class="link link--alt-color-2" , target="_blank">registration form</a> and we will make these available to you.
+                  Certainly! Please include this request on your <a href="#" , class="link link--alt-color-2" ,
+                    target="_blank">registration form</a> and we will make these available to you.
                 </p>
               </div>
             </div>
 
+            <!-- E Q2 -->
             <div class="questions__question-block">
-              <div class="questions__heading-tertiary-container">
+              <div class="questions__header">
                 <h3 class="questions__heading-tertiary">2. Who do I contact if I have other questions?</h3>
+                <button class="expand-btn expand">
+                  <div></div>
+                </button>
               </div>
 
-              <div class="questions__paragraphs">
+              <div class="questions__answer collapsed">
                 <address>
                   Please email our student representatives at
                   <a href="mailto:vizindustryfair@arch.tamu.edu" class="link link--alt-color-2">
