@@ -20,6 +20,9 @@
   --color-gray: #767676;
   --color-gray-light: #c1c1c1;
   --color-gray-lightest: #fff;
+
+
+  --questions__answer-padding: 2rem;
 }
 
 *,
@@ -428,17 +431,23 @@ address {
 }
 
 .questions__answer {
-  padding: 2rem;
+  padding: var(--questions__answer-padding);
   background-color: var(--color-tertiary-lightest);
 }
 
 .questions__answer.collapsable {
   animation-duration: 0.1s;
   animation-timing-function: ease-out;
+
+  height: 0;
+  padding: 0;
 }
 
 .questions__answer.collapsable.expanded {
   animation-name: expand;
+
+  height: initial;
+  padding: var(--questions__answer-padding);
 }
 
 .questions__answer.collapsable.collapsed {
@@ -451,11 +460,11 @@ address {
   0% {
     transform: translateY(0);
     height: 100%;
-    padding: 2rem;
+    padding: var(--questions__answer-padding);
   }
 
   100% {
-    padding: 2rem;
+    padding: var(--questions__answer-padding);
     transform: translateY(-100%);
   }
 }
