@@ -18,7 +18,24 @@
 
 <body>
   <div class="container questions">
-    <div class="banner">&lt;BANNER&gt;</div>
+    <div class="banner">
+      <div class="banner__logo-container">
+        <svg class="banner__logo" xmlns="http://www.w3.org/2000/svg" width="403.286" height="216"
+          viewBox="0 0 403.286 216">
+          <path
+            d="M403.286,61.432H341.433V26.6h61.853ZM341.433,94.847v29.86h61.853V94.847H341.433M309.8,61.432V26.6H275.314v94.557L184.667,26.6H147.342L309.8,189.4V94.847h31.638V61.432Z"
+            fill="#32999d" />
+          <path d="M309.8,61.432V26.6h31.638V61.432Zm0,33.415V189.4h31.638V94.847Z" fill="#ceeeef" />
+          <polygon points="0 216 0 0 214.178 216 0 216" fill="#32999d" />
+        </svg>
+      </div>
+
+      <div class="banner__text-container">
+        <p class="banner__date">Friday, February 25, 2022</p>
+        <p class="banner__fair-text">Visualization Industry Fair</p>
+      </div>
+    </div>
+
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__item"><a href="index.html" class="nav__link">Welcome</a></li>
@@ -29,176 +46,180 @@
         <li class="nav__item"><a href="#" class="nav__link">VIF Committee</a></li>
       </ul>
     </nav>
-    <section id="section-questions" class="section-questions">
-      <div class="questions">
-        <header>
-          <h1 class="questions__heading">Common Questions</h1>
-        </header>
+
+    <main class="main">
+      <section id="section-questions" class="section-questions">
+        <div class="questions">
+          <header>
+            <h1 class="heading-primary">Common Questions</h1>
+          </header>
 
 
-        <div class="questions__student-questions">
-          <h2 class="questions__heading-secondary">Students</h2>
+          <div class="questions__student-questions">
+            <h2 class="heading-secondary">Students</h2>
 
-          <div class="questions__qa-blocks">
-            <!-- S Q1 -->
-            <div class="questions__qa-block">
-              <div class="questions__header">
-                <h3 class="questions__heading-tertiary">1. Do I need to register to attend the Industries Fair?</h3>
-                <button class="expand-btn expand">
-                  <div></div>
-                </button>
+            <div class="questions__qa-blocks">
+              <!-- S Q1 -->
+              <div class="questions__qa-block">
+                <div class="questions__header">
+                  <h3 class="heading-tertiary">1. Do I need to register to attend the Industries Fair?</h3>
+                  <button class="expand-btn expand">
+                    <div></div>
+                  </button>
+                </div>
+
+                <div class="paragraphs-container questions__answer collapsable collapsed">
+                  <p>
+                    YES. You must register <a href="#" , class="link link--alt-color-2" , target="_blank">here</a>.
+                  </p>
+                  <p>
+                    For in-person fairs, You will receive a printed name tag the day of the Industries Fair and your
+                    contact
+                    information will be made available to company representatives who may need to contact you after the
+                    Industries
+                    Fair.
+                  </p>
+                  <p>
+                    For Virtual Fairs, Please make sure your virtual name is your first and last name, and your focus is
+                    mentioned
+                    afterwards. For example: Mayet Andreassen - Modeling/LookDev, or Mayet Andreassen - UI/UX, ect.
+                  </p>
+                </div>
+
               </div>
 
-              <div class="questions__answer collapsable collapsed">
-                <p>
-                  YES. You must register <a href="#" , class="link link--alt-color-2" , target="_blank">here</a>.
-                </p>
-                <p>
-                  For in-person fairs, You will receive a printed name tag the day of the Industries Fair and your
-                  contact
-                  information will be made available to company representatives who may need to contact you after the
-                  Industries
-                  Fair.
-                </p>
-                <p>
-                  For Virtual Fairs, Please make sure your virtual name is your first and last name, and your focus is
-                  mentioned
-                  afterwards. For example: Mayet Andreassen - Modeling/LookDev, or Mayet Andreassen - UI/UX, ect.
-                </p>
+              <!-- S Q2 -->
+              <div class="questions__qa-block">
+                <div class="questions__header">
+                  <h3 class="heading-tertiary">2. What is the dress code?</h3>
+                  <button class="expand-btn expand">
+                    <div></div>
+                  </button>
+                </div>
+
+                <div class="paragraphs-container questions__answer collapsable collapsed">
+                  <p>
+                    You should wear clothes that are professionally appropriate for the position for which you are
+                    applying.
+                    If you’re unsure of what to wear, you should always dress to impress.
+                  </p>
+                </div>
               </div>
 
+              <!-- S Q3 -->
+              <div class="questions__qa-block">
+                <div class="questions__header">
+                  <h3 class="heading-tertiary">3. Can I volunteer to help with the Industries Fair?</h3>
+                  <button class="expand-btn expand">
+                    <div></div>
+                  </button>
+                </div>
+
+                <div class="paragraphs-container questions__answer collapsable collapsed">
+                  <p>
+                    Absolutely! Student volunteers are essential for the Industry Fair to run smoothly.
+                  </p>
+
+                  <article>
+                    <address>
+                      Please email our student representatives at
+                      <a href="mailto:vizindustryfair@arch.tamu.edu" class="link link--alt-color-2">
+                        vizindustryfair@arch.tamu.edu
+                      </a>
+                      if you are interested in participating.
+                    </address>
+                  </article>
+                </div>
+              </div>
+
+              <!-- S Q4 -->
+              <div class="questions__qa-block">
+                <div class="questions__header">
+                  <h3 class="heading-tertiary">4. Are classes cancelled for the Industries Fair?</h3>
+                  <button class="expand-btn expand">
+                    <div></div>
+                  </button>
+                </div>
+
+                <div class="paragraphs-container questions__answer collapsable collapsed">
+                  <p>
+                    Though classes are not canceled, Career Fairs can be considered an excused absence under Rule 07 of
+                    the
+                    Texas A&M Attendance code, as they fall under the following section:
+                  <p class="indent">
+                    7.2.2.6 Mandatory interviews for permanent, full-time employment or full-time internships (including
+                    those that are part of a cooperative education program) that have a duration of at least 10 weeks,
+                    provided that such interviews are related to the student’s academic program and provided that the
+                    interviews are fixed date by employer policy and cannot be rescheduled. A student may not request
+                    excused absences for employment or internship interviews for more than one scheduled class meeting
+                    in
+                    one academic term.
+                  </p>
+                  <p class="indent">
+                    7.2.2.8 Participation in an activity appearing on the university authorized activity list.
+                  </p>
+                  </p>
+
+                  <p>
+                    However, there is a maximum of one (1) excused absence for interviews or employment related
+                    activities.
+                    Please plan your day accordingly so you don’t miss the opportunity to speak with company
+                    representatives. Some professors may allow students to attend during regularly scheduled class time.
+                    Check with your professor regarding their policy for attending the Industry Fair. Make sure to
+                    notify
+                    your professors ahead of time.
+                  </p>
+                </div>
+              </div>
             </div>
+          </div>
 
-            <!-- S Q2 -->
-            <div class="questions__qa-block">
-              <div class="questions__header">
-                <h3 class="questions__heading-tertiary">2. What is the dress code?</h3>
-                <button class="expand-btn expand">
-                  <div></div>
-                </button>
+          <div class="questions__employer-questions">
+            <h2 class="heading-secondary">Employers</h2>
+
+            <div class="questions__qa-blocks">
+              <!-- E Q1 -->
+              <div class="questions__qa-block">
+                <div class="questions__header">
+                  <h3 class="heading-tertiary">
+                    1. Can we review student resumes and portfolios prior to the
+                    Industries Fair so we can conduct interviews while we’re there?</h3>
+                  <button class="expand-btn expand">
+                    <div></div>
+                  </button>
+                </div>
+
+                <div class="paragraphs-container questions__answer collapsable collapsed">
+                  <p>
+                    Certainly! Please include this request on your <a href="#" , class="link link--alt-color-2" ,
+                      target="_blank">registration form</a> and we will make these available to you.
+                  </p>
+                </div>
               </div>
 
-              <div class="questions__answer collapsable collapsed">
-                <p>
-                  You should wear clothes that are professionally appropriate for the position for which you are
-                  applying.
-                  If you’re unsure of what to wear, you should always dress to impress.
-                </p>
-              </div>
-            </div>
+              <!-- E Q2 -->
+              <div class="questions__qa-block">
+                <div class="questions__header">
+                  <h3 class="heading-tertiary">2. Who do I contact if I have other questions?</h3>
+                  <button class="expand-btn expand">
+                    <div></div>
+                  </button>
+                </div>
 
-            <!-- S Q3 -->
-            <div class="questions__qa-block">
-              <div class="questions__header">
-                <h3 class="questions__heading-tertiary">3. Can I volunteer to help with the Industries Fair?</h3>
-                <button class="expand-btn expand">
-                  <div></div>
-                </button>
-              </div>
-
-              <div class="questions__answer collapsable collapsed">
-                <p>
-                  Absolutely! Student volunteers are essential for the Industry Fair to run smoothly.
-                </p>
-
-                <article>
+                <div class="paragraphs-container questions__answer collapsable collapsed">
                   <address>
                     Please email our student representatives at
                     <a href="mailto:vizindustryfair@arch.tamu.edu" class="link link--alt-color-2">
                       vizindustryfair@arch.tamu.edu
                     </a>
-                    if you are interested in participating.
+                    if you have any questions or special needs.
                   </address>
-                </article>
-              </div>
-            </div>
-
-            <!-- S Q4 -->
-            <div class="questions__qa-block">
-              <div class="questions__header">
-                <h3 class="questions__heading-tertiary">4. Are classes cancelled for the Industries Fair?</h3>
-                <button class="expand-btn expand">
-                  <div></div>
-                </button>
-              </div>
-
-              <div class="questions__answer collapsable collapsed">
-                <p>
-                  Though classes are not canceled, Career Fairs can be considered an excused absence under Rule 07 of
-                  the
-                  Texas A&M Attendance code, as they fall under the following section:
-                <p class="indent">
-                  7.2.2.6 Mandatory interviews for permanent, full-time employment or full-time internships (including
-                  those that are part of a cooperative education program) that have a duration of at least 10 weeks,
-                  provided that such interviews are related to the student’s academic program and provided that the
-                  interviews are fixed date by employer policy and cannot be rescheduled. A student may not request
-                  excused absences for employment or internship interviews for more than one scheduled class meeting in
-                  one academic term.
-                </p>
-                <p class="indent">
-                  7.2.2.8 Participation in an activity appearing on the university authorized activity list.
-                </p>
-                </p>
-
-                <p>
-                  However, there is a maximum of one (1) excused absence for interviews or employment related
-                  activities.
-                  Please plan your day accordingly so you don’t miss the opportunity to speak with company
-                  representatives. Some professors may allow students to attend during regularly scheduled class time.
-                  Check with your professor regarding their policy for attending the Industry Fair. Make sure to notify
-                  your professors ahead of time.
-                </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="questions__employer-questions">
-          <h2 class="questions__heading-secondary">Employers</h2>
-
-          <div class="questions__qa-blocks">
-            <!-- E Q1 -->
-            <div class="questions__qa-block">
-              <div class="questions__header">
-                <h3 class="questions__heading-tertiary">
-                  1. Can we review student resumes and portfolios prior to the
-                      Industries Fair so we can conduct interviews while we’re there?</h3>
-                <button class="expand-btn expand">
-                  <div></div>
-                </button>
-              </div>
-
-              <div class="questions__answer collapsable collapsed">
-                <p>
-                  Certainly! Please include this request on your <a href="#" , class="link link--alt-color-2" ,
-                    target="_blank">registration form</a> and we will make these available to you.
-                </p>
-              </div>
-            </div>
-
-            <!-- E Q2 -->
-            <div class="questions__qa-block">
-              <div class="questions__header">
-                <h3 class="questions__heading-tertiary">2. Who do I contact if I have other questions?</h3>
-                <button class="expand-btn expand">
-                  <div></div>
-                </button>
-              </div>
-
-              <div class="questions__answer collapsable collapsed">
-                <address>
-                  Please email our student representatives at
-                  <a href="mailto:vizindustryfair@arch.tamu.edu" class="link link--alt-color-2">
-                    vizindustryfair@arch.tamu.edu
-                  </a>
-                  if you have any questions or special needs.
-                </address>
-              </div>
-            </div>
-          </div>
-        </div>
-
-    </section>
+      </section>
+    </main>
 
     <footer class="footer">&lt;FOOTER&gt;</footer>
   </div>

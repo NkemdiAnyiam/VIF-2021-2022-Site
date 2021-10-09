@@ -9,16 +9,17 @@
   --color-secondary: #4fbd90;
 
   --color-tertiary-darkest: #1a4e50;
+  --color-tertiary-darker: #32999d;
+  --color-tertiary-dark: #3bb2b6;
   --color-tertiary: #5ac6ca;
   --color-tertiary-light: #9adcdf;
   --color-tertiary-lightest: #ceeeef;
 
   --color-gray-darkest: #333;
   --color-gray-dark: #555;
-  --color-gray: #767676; /* (lightest gray allowed on #fff) */
+  --color-gray: #767676;
   --color-gray-light: #c1c1c1;
-  --color-gray-lightest: #fff; /* (lightest gray allowed on #fdf2e9) */
-  /* */
+  --color-gray-lightest: #fff;
 }
 
 *,
@@ -43,6 +44,31 @@ body {
   color: var(--color-gray-darkest);
 }
 
+.container {
+  max-width: 140rem;
+  padding-top: 0;
+  background-color: var(--color-gray-lightest);
+
+  margin: 0 auto;
+  box-shadow: 0 5px 10px #1b000b;
+
+  display: grid;
+  grid-template-columns: 20fr 80fr;
+  row-gap: 3rem;
+  justify-content: center;
+  
+  grid-template-areas:
+    "banner banner"
+    "nav main"
+    "footer footer";
+}
+
+
+
+/*****************************************************************/
+/**************************** SCROLLBAR ****************************/
+/*****************************************************************/
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -62,17 +88,31 @@ body {
   background: var(--color-tertiary-darkest); 
 }
 
-h1 {
+
+
+/*****************************************************************/
+/**************************** GENERAL ****************************/
+/*****************************************************************/
+
+.heading-primary {
   color: var(--color-primary-dark);
   font-size: 5rem;
-
-  display: flex;
-  /* justify-content: center; */
+  margin-bottom: 5rem;
 }
 
-a {
+.heading-secondary {
+  margin-bottom: 3rem;
+  font-size: 3.6rem;
+}
+
+.heading-tertiary {
+  font-size: 2.4rem;
+}
+
+.link,
+.nav__link {
   text-decoration: none;
-  padding-bottom: 3px;
+  padding-bottom: 2px;
   border-bottom: transparent 2px solid;
   transition: all 0.2s;
 }
@@ -81,49 +121,95 @@ address {
   font-style: normal;
 }
 
-.container {
-  max-width: 140rem;
-  /* padding: 3.2rem; */
-  padding-top: 0;
-  background-color: var(--color-gray-lightest);
-
-  margin: 0 auto;
-  box-shadow: 0 5px 10px #1b000b;
-
-  display: grid;
-  grid-template-columns: 20fr 80fr;
-  row-gap: 3rem;
-  justify-content: center;
-}
-
-.banner,
-.footer {
-  background-color: var(--color-gray-light);
-
+.paragraphs-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 5rem;
-  color: var(--color-gray-darkest);
+  flex-direction: column;
+  gap: 1.8rem;
 }
+
+.paragraphs-container p {
+  font-size: 1.8rem;
+  line-height: 1.7;
+}
+
+.main {
+  padding: 0 6vw;
+  grid-area: main;
+}
+
+
+
+/*****************************************************************/
+/**************************** BANNER ****************************/
+/*****************************************************************/
 
 .banner {
   grid-area: banner;
-  height: 20rem;
+  background-color: var(--color-gray-darkest);
+  color: var(--color-tertiary-lightest);
+  display: grid;
+  grid-template-columns: 20fr 80fr;
+  align-content: center;
 }
+
+.banner__logo-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.banner__logo {
+  width: 100%;
+  height: auto;
+}
+
+.banner__text-container {
+  color: var(--color-tertiary-lightest);
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  justify-content: center;
+  padding-left: 6.4vw;
+}
+
+.banner__date {
+  font-size: calc(1vw + 0.7rem);
+}
+
+.banner__fair-text {
+  font-size: calc(2vw + 0.7rem);
+}
+
+
+
+/*****************************************************************/
+/**************************** FOOTER ****************************/
+/*****************************************************************/
 
 .footer {
   grid-area: footer;
   height: 15rem;
 }
 
+.footer {
+  background-color: var(--color-gray-darkest);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  color: var(--color-tertiary-lightest);
+}
+
+
+
 /*****************************************************************/
 /**************************** NAV ****************************/
 /*****************************************************************/
 
 .nav {
-  /* background-color: var(--color-primary-lightest); */
-  padding: 0 2rem 1rem 3.2rem;
+  padding: 0 3vw;
   grid-area: nav;
   align-self: start;
   border-right: 1px solid var(--color-gray-light);
@@ -140,6 +226,7 @@ address {
 .nav__link:link,
 .nav__link:visited {
   color: var(--color-gray-dark);
+  line-height: 1.3;
 }
 
 .nav__link:hover,
@@ -148,66 +235,16 @@ address {
   border-bottom: currentColor 2px solid;
 }
 
-/*****************************************************************/
-/**************************** GENERAL ****************************/
-/*****************************************************************/
 
-.section-welcome,
-.section-about-viz,
-.section-for-industry,
-.section-about-vif,
-.section-questions {
-  background-color: var(--color-gray-lightest);
-  padding: 0 7.2rem 1rem 4rem;
-}
-
-.welcome__heading,
-.about-viz__heading,
-.for-industry__heading,
-.about-vif__heading,
-.questions__heading {
-  margin-bottom: 5rem;
-}
-
-.welcome__paragraphs,
-.about-viz__paragraphs,
-.for-industry__paragraphs,
-.about-vif__paragraphs,
-.questions__answer {
-  display: flex;
-  flex-direction: column;
-  gap: 1.8rem;
-}
-
-.welcome__paragraphs p,
-.about-viz__paragraphs p,
-.for-industry__paragraphs p,
-.about-vif__paragraphs p,
-.questions__answer p {
-  font-size: 1.8rem;
-  line-height: 1.7;
-}
 
 /*****************************************************************/
 /**************************** WELCOME ****************************/
 /*****************************************************************/
 
-.container.welcome {
-  grid-template-areas:
-    "banner banner"
-    "nav welcome"
-    "nav companies"
-    "footer footer";
-}
-
 .section-welcome {
-  grid-area: welcome;
 }
 
 .section-companies-list {
-  grid-area: companies;
-  /* background-color: var(--color-gray-light); */
-  padding: 0 7.2rem 1.4rem 4rem;
 }
 
 .companies-list {
@@ -239,13 +276,6 @@ address {
 /*****************************************************************/
 /**************************** ABOUT VIZ ****************************/
 /*****************************************************************/
-
-.container.about-viz {
-  grid-template-areas:
-    "banner banner"
-    "nav about-viz"
-    "footer footer";
-}
 
 .section-about-viz {
   grid-area: about-viz;
@@ -311,18 +341,12 @@ address {
 }
 
 
+
 /*****************************************************************/
 /**************************** FOR INDUSTRY ****************************/
 /*****************************************************************/
-.container.for-industry {
-  grid-template-areas:
-  "banner banner"
-  "nav for-industry"
-  "footer footer";
-}
 
 .section-for-industry {
-  grid-area: for-industry;
 }
 
 .for-industry__content {
@@ -352,19 +376,12 @@ address {
 }
 
 
+
 /*****************************************************************/
 /**************************** ABOUT VIF ****************************/
 /*****************************************************************/
 
-.container.about-vif {
-  grid-template-areas:
-    "banner banner"
-    "nav about-vif"
-    "footer footer";
-}
-
 .section-about-vif {
-  grid-area: about-vif;
 }
 
 
@@ -373,12 +390,6 @@ address {
 /**************************** QUESTIONS ****************************/
 /*****************************************************************/
 
-.container.questions {
-  grid-template-areas:
-    "banner banner"
-    "nav questions"
-    "footer footer";
-}
 
 .section-questions {
   grid-area: questions;
@@ -386,11 +397,6 @@ address {
 
 .questions__employer-questions {
   margin-top: 6rem;
-}
-
-.questions__heading-secondary {
-  margin-bottom: 3rem;
-  font-size: 3.6rem;
 }
 
 .questions__qa-blocks {
@@ -417,8 +423,7 @@ address {
   position: relative;
 }
 
-.questions__heading-tertiary {
-  font-size: 2.4rem;
+.questions__header .heading-tertiary {
   flex: 1;
 }
 
@@ -496,6 +501,11 @@ address {
   padding-left: 2rem;
 }
 
+
+
+/*****************************************************************/
+/**************************** MEDIA QUERIES ****************************/
+/*****************************************************************/
 
 /* @media only screen and (max-width: 768px) {
   .container.home {
