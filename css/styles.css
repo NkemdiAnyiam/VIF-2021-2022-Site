@@ -238,6 +238,11 @@ address {
   border-bottom: currentColor 2px solid;
 }
 
+.nav__link.nav__link--current {
+  color: var(--color-gray-light);
+  border: none;
+}
+
 
 
 /*****************************************************************/
