@@ -19,6 +19,7 @@
   --color-gray-dark: #555;
   --color-gray: #767676;
   --color-gray-light: #c1c1c1;
+  --color-gray-lighter: #eee;
   --color-gray-lightest: #fff;
 
 
@@ -445,6 +446,7 @@ address {
 
   height: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 .questions__answer.collapsable.expanded {
@@ -550,7 +552,15 @@ address {
   position: relative;
 }
 
-.committee__block-header .photo-container {
+.committee__block-header.committee__block-header--director {
+  background-color: var(--color-primary-dark);
+}
+
+.committee__block-header.committee__block-header--faculty {
+  background-color: var(--color-gray-darkest);
+}
+
+.committee__block-header .committee__photo-container {
   margin-right: 1rem;
 
   display: flex;
@@ -577,9 +587,51 @@ address {
   flex: 1;
 }
 
+.committee__social-links  {
+  background-color: var(--color-secondary-darkest);
+  padding: 1rem 2rem;
+  position: relative;
+  z-index: 1;
+  transition: all 0.2s;
+
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.committee__social-links.committee__social-links--director {
+  background-color: var(--color-primary-dark);
+}
+
+.committee__social-links.committee__social-links--faculty {
+  background-color: var(--color-gray-darkest);
+}
+
+.committee__social-link:link,
+.committee__social-link:visited {
+  color: var(--color-gray-lightest);
+}
+
+.committee__social-link:hover,
+.committee__social-link:active {
+  color: var(--color-primary-lightest);
+}
+
+.committee__social-icon {
+  font-size: 3.6rem;
+}
+
 .committee__description {
   padding: var(--questions__answer-padding);
   background-color: var(--color-tertiary-lightest);
+}
+
+.committee__description.committee__description--director {
+  background-color: var(--color-primary-lightest);
+}
+
+.committee__description.committee__description--faculty {
+  background-color: var(--color-gray-lighter);
 }
 
 .committee__description.collapsable {
@@ -588,6 +640,7 @@ address {
 
   height: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 .committee__description.collapsable.expanded {
@@ -602,6 +655,11 @@ address {
   height: 0;
   padding: 0;
 }
+
+.committee__description.collapsable:not(.expanded) + .committee__social-links { /* Remove padding above social links when collapsed */
+  padding-top: 0!important;
+}
+
 @keyframes collapse {
   0% {
     transform: translateY(0);
