@@ -50,194 +50,53 @@
     <main class="main">
       <section id="section-committee" class="section-committee">
         <div class="committee">
+
           <h1 class="heading-primary">VIF Committee</h1>
 
           <div class="committee__blocks">
-            <!-- Jackson Spencer -->
-            <div class="committee__block">
-              <div class="committee__block-header committee__block-header--director">
-                <div class="committee__photo-container">
-                  <img src="https://m3placement.com/wp-content/uploads/2021/03/image-placeholder-350x350-1.png" alt="Jackson Spencer" class="committee__photo">
+            <template id="committee__block-template">
+              <div class="committee__block">
+                <div class="committee__block-header">
+                  <div class="committee__photo-container">
+                    <img src="imgs/Headshot_Nkemdi-Anyiam-OG-min.png" alt="Nkemdi Anyiam" class="committee__photo">
+                  </div>
+                  <div class="committee__header-text">
+                    <h3 class="committee__name heading-tertiary">Nkemdi Anyiam</h3>
+                    <p class="committee__role">Website Designer & Developer</p>
+                  </div>
+                  <button class="expand-btn expand">
+                    <div></div>
+                  </button>
                 </div>
-                <div class="committee__header-text">
-                  <h3 class="heading-tertiary">Jackson Spencer</h3>
-                  <p class="committee__role">Committee Director</p>
+
+                <div class="paragraphs-container committee__description collapsable">
+                  <p>
+                    Nkemdi Anyiam is a senior Computer Science major with minors in Art and Game Design & Development
+                    at Texas A&M University. He is focusing on front-end web development and is currently working on
+                    multiple projects. He is the one who created the website that you are currently viewing :)
+                  </p>
                 </div>
-                <button class="expand-btn expand">
-                  <div></div>
-                </button>
-              </div>
 
-              <div class="paragraphs-container committee__description committee__description--director collapsable">
-                <p>
-                </p>
-              </div>
-
-              <div class="committee__social-links committee__social-links--director">
-              </div>
-            </div>
-            <!-- end Jackson Spencer -->
-
-            <!-- Nkemdi Anyiam -->
-            <div class="committee__block">
-              <div class="committee__block-header">
-                <div class="committee__photo-container">
-                  <img src="imgs/Headshot_Nkemdi-Anyiam-OG.png" alt="Nkemdi Anyiam" class="committee__photo">
+                <div class="committee__social-links">
+                  <template id="committee__social-link-template">
+                    <a href="https://www.linkedin.com/in/nkemdi-anyiam/" target="_blank" class="committee__social-link">
+                      <ion-icon name="logo-linkedin" class="committee__social-icon md hydrated" role="img"
+                        aria-label="logo linkedin">
+                      </ion-icon>
+                    </a>
+                    <a href="https://nkemdianyiam.myportfolio.com/" target="_blank" class="committee__social-link">
+                      <ion-icon name="person-circle-outline" class="committee__social-icon md hydrated" role="img"
+                        aria-label="person circle outline">
+                      </ion-icon>
+                    </a>
+                    <a href="https://github.com/NkemdiAnyiam" target="_blank" class="committee__social-link">
+                      <ion-icon name="logo-github" class="committee__social-icon md hydrated" role="img"
+                        aria-label="logo github">
+                      </ion-icon>
+                    </a>
+                  </template>
                 </div>
-                <div class="committee__header-text">
-                  <h3 class="heading-tertiary">Nkemdi Anyiam</h3>
-                  <p class="committee__role">Website Designer & Developer</p>
-                </div>
-                <button class="expand-btn expand">
-                  <div></div>
-                </button>
-              </div>
-
-              <div class="paragraphs-container committee__description collapsable">
-                <p>
-                  Nkemdi Anyiam is a senior Computer Science major with minors in Art and Game Design & Development at
-                  Texas A&M University. He is focusing on front-end web development and is currently working on multiple
-                  projects. He is the one who created the website that you are currently viewing :)
-                </p>
-              </div>
-
-              <div class="committee__social-links">
-                <a href="https://www.linkedin.com/in/nkemdi-anyiam/" target="_blank" class="committee__social-link">
-                  <ion-icon name="logo-linkedin" class="committee__social-icon"></ion-icon>
-                </a>
-                <a href="https://nkemdianyiam.myportfolio.com/" target="_blank" class="committee__social-link">
-                  <ion-icon name="person-circle-outline" class="committee__social-icon"></ion-icon>
-                </a>
-                <a href="https://github.com/NkemdiAnyiam" target="_blank" class="committee__social-link">
-                  <ion-icon name="logo-github" class="committee__social-icon"></ion-icon>
-                </a>
-              </div>
-            </div>
-            <!-- end Nkemdi Anyiam -->
-
-            <!-- Garvin Beltz -->
-            <div class="committee__block">
-              <div class="committee__block-header">
-                <div class="committee__photo-container">
-                  <img src="imgs/beltzGarvinProfile.jpg" alt="Garvin Beltz" class="committee__photo">
-                </div>
-                <div class="committee__header-text">
-                  <h3 class="heading-tertiary">Garvin Beltz</h3>
-                  <p class="committee__role">Logistical Support</p>
-                </div>
-                <button class="expand-btn expand">
-                  <div></div>
-                </button>
-              </div>
-
-              <div class="paragraphs-container committee__description collapsable">
-                <p>
-                  Garvin Beltz is a 2nd year graduate student in the Visualization Department at Texas A&M University.
-                  He is focusing on project management and rigging for feature animation, and is on track to graduate in
-                  May.
-                </p>
-              </div>
-
-
-              <div class="committee__social-links">
-                <a href="https://www.linkedin.com/in/garvinbeltz/" target="_blank" class="committee__social-link">
-                  <ion-icon name="logo-linkedin" class="committee__social-icon"></ion-icon>
-                </a>
-                <a href="https://garvinbeltz.artstation.com/" target="_blank" class="committee__social-link">
-                  <ion-icon name="person-circle-outline" class="committee__social-icon"></ion-icon>
-                </a>
-              </div>
-            </div>
-            <!-- end Garvin Beltz -->
-
-            <!-- Weston Jones -->
-            <div class="committee__block">
-              <div class="committee__block-header">
-                <div class="committee__photo-container">
-                  <img src="https://m3placement.com/wp-content/uploads/2021/03/image-placeholder-350x350-1.png" alt="Weston Jones" class="committee__photo">
-                </div>
-                <div class="committee__header-text">
-                  <h3 class="heading-tertiary">Weston Jones</h3>
-                  <p class="committee__role">Industry Outreach</p>
-                </div>
-                <button class="expand-btn expand">
-                  <div></div>
-                </button>
-              </div>
-
-              <div class="paragraphs-container committee__description collapsable">
-                <p>
-                </p>
-              </div>
-
-
-              <div class="committee__social-links">
-              </div>
-            </div>
-            <!-- end Weston Jones -->
-
-            <!-- Akhilesh Vijaykumar -->
-            <div class="committee__block">
-              <div class="committee__block-header">
-                <div class="committee__photo-container">
-                  <img src="imgs/Akhilesh.jpg" alt="Akhilesh Vijaykumar" class="committee__photo">
-                </div>
-                <div class="committee__header-text">
-                  <h3 class="heading-tertiary">Akhilesh Vijaykumar</h3>
-                  <p class="committee__role">Industry Outreach</p>
-                </div>
-                <button class="expand-btn expand">
-                  <div></div>
-                </button>
-              </div>
-
-              <div class="paragraphs-container committee__description collapsable">
-                <p>
-                  Akhilesh Viajykumar is a Graduate student in the Visualization Department at Texas A&M University. He
-                  is currently working as a Technical Artist Intern at Electronic Arts (EA).
-                </p>
-              </div>
-
-
-              <div class="committee__social-links">
-                <a href="https://www.linkedin.com/in/akhilesh-vijaykumar-35691014a/" target="_blank" class="committee__social-link">
-                  <ion-icon name="logo-linkedin" class="committee__social-icon"></ion-icon>
-                </a>
-              </div>
-            </div>
-            <!-- end Akhilesh Vijaykumar -->
-
-            <!-- Mayet Andreasson -->
-            <div class="committee__block">
-              <div class="committee__block-header committee__block-header--faculty">
-                <div class="committee__photo-container">
-                  <img src="imgs/Mayet_Photo_TwistsBG.jpg" alt="Mayet Andreasson" class="committee__photo">
-                </div>
-                <div class="committee__header-text">
-                  <h3 class="heading-tertiary">Mayet Andreasson</h3>
-                  <p class="committee__role">Faculty Lead Liason</p>
-                </div>
-                <button class="expand-btn expand">
-                  <div></div>
-                </button>
-              </div>
-
-              <div class="paragraphs-container committee__description committee__description--faculty collapsable">
-                <p>
-                  Mayet Andreassen is currently working as a full-time Instructional Assistant Professor and Internship
-                  Coordinator in the Visualization Department at Texas A&M University. She is also a member of the TXMPA
-                  (Texas Motion Picture Assoc.) Board, as the Education Representative. She has over 10 years of
-                  teaching experience, with a focus in games and animation. She previously worked as a game and
-                  front-end artist, as well as a freelance illustrator and graphics artist, prior to becoming an
-                  educator.
-                </p>
-              </div>
-
-              <div class="committee__social-links committee__social-links--faculty">
-
-              </div>
-            </div>
-            <!-- end Mayet Andreasson -->
+            </template>
           </div>
 
         </div>
