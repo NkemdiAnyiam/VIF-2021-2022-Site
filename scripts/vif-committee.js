@@ -13,7 +13,7 @@ const members = [
   // Jackson Spencer
   {
     fullName: 'Jackson Spencer',
-    imgSrc: '../imgs/JacksonSpencer-min.jpg',
+    imgSrc: 'imgs/JacksonSpencer-min.jpg',
     role: 'Committee Director',
     description: `Jackson Spencer graduated with a BS in Visualization in 2019 and is currently a graduate student pursuing his MS in Visualization, with a primary focus in Look Development for feature animation. He also works as the Lead Pipeline Technician for the Viz Department, where he manages the campus renderfarm and provides technical support to the major’s animation pipeline. Despite his primarily technical role, he has always had a deep love for art, and strives to bring an artistic perspective to every project he works on.`,
     socialLinks: [
@@ -23,7 +23,7 @@ const members = [
   // Nkemdi Anyiam
   {
     fullName: 'Nkemdi Anyiam',
-    imgSrc: '../imgs/Headshot_Nkemdi-Anyiam-OG-min.png',
+    imgSrc: 'imgs/Headshot_Nkemdi-Anyiam-OG-min.png',
     role: 'Website Designer & Developer',
     description: `Nkemdi Anyiam is a senior Computer Science major with minors in Art and Game Design & Development at\
     Texas A&M University. He is focusing on front-end web development and is currently working on multiple\
@@ -47,7 +47,7 @@ const members = [
   // Daniel Arellano
   {
     fullName: 'Daniel Arellano',
-    imgSrc: '../imgs/ArellanoDaniel-min.jpg',
+    imgSrc: 'imgs/ArellanoDaniel-min.jpg',
     role: 'Social Media',
     description: `Daniel Arellano is a graduate student in the M.S. Visualization program, Daniel is a driven 3D artist who loves to make hard surface models and Look Development. He hopes to one day be a part of the teams over at Treyarch and Infinity Ward in order to contribute in the making of Call of Duty.`,
     socialLinks: [
@@ -57,7 +57,7 @@ const members = [
   // Jaime Diaz
   {
     fullName: 'Jaime Diaz',
-    imgSrc: '../imgs/diazJaime_profilePicture_01-min.png',
+    imgSrc: 'imgs/diazJaime_profilePicture_01-min.png',
     role: 'Social Media',
     description: `Jaime Diaz is an undergraduate at Texas A&M University studying Visualization within the College of Architecture as well as taking a minor in Game Design and Development. As a 3D Artist,  Jaime is working hard to better himself everyday, expanding his skillset with the tools he currently has and new ones to add under his belt. He has experience in both Animation and Video Game pipelines/workflows.`,
     socialLinks: [
@@ -67,7 +67,7 @@ const members = [
   // Weston Jones
   {
     fullName: 'Weston Jones',
-    imgSrc: '../imgs/Weston_Jones_Square-min.jpg',
+    imgSrc: 'imgs/Weston_Jones_Square-min.jpg',
     role: 'Industry Outreach',
     description: `Weston Jones is a Graduate student in the M.S. Visualization program. Becoming a director or studio lead for a games studio is Weston's long term goal; his pathway to this has included a Bachelor's degree in Computer Animation from SHSU and a study of Game Design, C++/# programming, Short Film Layout and Lighting, and more.`,
     socialLinks: [
@@ -95,7 +95,7 @@ const members = [
    // Akhilesh Vijaykumar
    {
     fullName: 'Akhilesh Vijaykumar',
-    imgSrc: '../imgs/Akhilesh-min.jpg',
+    imgSrc: 'imgs/Akhilesh-min.jpg',
     role: ' Industry Outreach',
     description: `Akhilesh Viajykumar is a Graduate student in the Visualization Department at Texas A&M University. He is currently working as a Technical Artist Intern at Electronic Arts (EA).`,
     socialLinks: [
@@ -109,7 +109,7 @@ const members = [
   // Mayet Andreassen
   {
     fullName: 'Mayet Andreassen',
-    imgSrc: '../imgs/Mayet_Photo_TwistsBG-min.jpg',
+    imgSrc: 'imgs/Mayet_Photo_TwistsBG-min.jpg',
     role: 'Faculty Lead Liaison',
     description: `Mayet Andreassen is currently working as a full-time Instructional Assistant Professor and Internship Coordinator in the Visualization Department at Texas A&M University. She is also a member of the TXMPA (Texas Motion Picture Assoc.) Board as the Education Representative. She has over 10 years of teaching experience with a focus in games and animation.  She previously worked as a game and front-end artist, as well as a freelance illustrator and graphics artist, prior to becoming an educator.`,
     socialLinks: [
