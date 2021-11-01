@@ -3,7 +3,6 @@
 /*****************************************************************/
 
 .section-vif-committee {
-
 }
 
 .committee__blocks {
@@ -67,12 +66,12 @@
   flex: 1;
 }
 
-.committee__social-links  {
+.committee__social-links {
   background-color: var(--color-secondary-darkest);
   padding: 1rem 2rem;
   position: relative;
   z-index: 1;
-  transition: all 0.2s;
+  transition: all 0.1s;
 
   display: flex;
   gap: 1rem;
@@ -102,7 +101,7 @@
 }
 
 .committee__description {
-  padding: var(--questions__answer-padding);
+  padding: var(--committee__description-padding);
   background-color: var(--color-tertiary-lightest);
 }
 
@@ -127,7 +126,7 @@
   animation-name: expand;
 
   height: initial;
-  padding: var(--questions__answer-padding);
+  padding: var(--committee__description-padding);
 }
 
 .committee__description.collapsable.collapsed {
@@ -136,19 +135,26 @@
   padding: 0;
 }
 
-.committee__description.collapsable:not(.expanded) + .committee__social-links { /* Remove padding above social links when collapsed */
-  padding-top: 0!important;
+.committee__description.collapsable:not(.expanded) + .committee__social-links {
+  /* Remove padding above social links when collapsed */
+  padding-top: 0 !important;
+}
+
+.committee__description.collapsable:not(.expanded)
+  + .committee__social-links--empty {
+  /* Remove ALL padding from empty social links when collapsed */
+  padding: 0 !important;
 }
 
 @keyframes collapse {
   0% {
     transform: translateY(0);
     height: 100%;
-    padding: var(--questions__answer-padding);
+    padding: var(--committee__description-padding);
   }
 
   100% {
-    padding: var(--questions__answer-padding);
+    padding: var(--committee__description-padding);
     transform: translateY(-100%);
   }
 }

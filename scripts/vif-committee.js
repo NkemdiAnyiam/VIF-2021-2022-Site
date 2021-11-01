@@ -156,8 +156,13 @@ const generateCommitteeBlock = (memberData) => {
   roleNode.innerHTML = role;
   descriptionNode.innerHTML = `<p>${description}</p>`;
 
-  // create social link elements for each social link the member has
   socialLinksNode.innerHTML = ''; // clear out template links
+  // if list contains no social links, collapse it using .committee__social-links--empty
+  console.log(socialLinks.length);
+  if (socialLinks.length == 0) {
+    socialLinksNode.classList.add('committee__social-links--empty');
+  }
+  // create social link elements for each social link the member has
   socialLinks.forEach(({link, iconName}) => {
     const socialLinkString = `
       <a href="${link}" target="_blank"

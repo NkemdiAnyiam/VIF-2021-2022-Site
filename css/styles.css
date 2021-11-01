@@ -14,6 +14,7 @@
 
 :root {
   --questions__answer-padding: 2rem;
+  --committee__description-padding: 2rem;
 }
 
 *,
