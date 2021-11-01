@@ -56,20 +56,20 @@ const injectFooter = () => {
 };
 injectFooter();
 
-// const injectNav = () => {
-//   const navigation = document.querySelector('.nav');
-//   const pathSubstring = window.location.pathname.substring(window.location.pathname.lastIndexOf('/') + 1)
-//   navigation.insertAdjacentHTML('beforeend', `
-//     <ul class="nav__list">
-//       <li class="nav__item"><a href="index.html" class="nav__link nav__link--current">Welcome</a></li>
-//       <li class="nav__item"><a href="about-vif.html" class="nav__link">About VIF</a></li>
-//       <li class="nav__item"><a href="for-industry.html" class="nav__link">For Industry</a></li>
-//       <li class="nav__item"><a href="common-questions.html" class="nav__link">Common Questions</a></li>
-//       <li class="nav__item"><a href="about-viz.html" class="nav__link">About Viz</a></li>
-//       <li class="nav__item"><a href="vif-committee.html" class="nav__link">VIF Committee</a></li>
-//     </ul>
-//   `);
-//   const currentLink = navigation.querySelector(`.nav__link[href="${pathSubstring}"]`);
-//   currentLink.classList.add('nav__link--current');
-// }
-// injectNav();
+const injectNav = () => {
+  const navigation = document.querySelector('.nav');
+  const pathSubstring = window.location.pathname.substring(window.location.pathname.lastIndexOf('/') + 1)
+  navigation.insertAdjacentHTML('beforeend', `
+    <ul class="nav__list">
+      <li class="nav__item"><a href="index.html" class="nav__link">Welcome</a></li>
+      <li class="nav__item"><a href="about-vif.html" class="nav__link">About VIF</a></li>
+      <li class="nav__item"><a href="for-industry.html" class="nav__link">For Industry</a></li>
+      <li class="nav__item"><a href="common-questions.html" class="nav__link">Common Questions</a></li>
+      <li class="nav__item"><a href="about-viz.html" class="nav__link">About Viz</a></li>
+      <li class="nav__item"><a href="vif-committee.html" class="nav__link">VIF Committee</a></li>
+    </ul>
+  `);
+  const currentLink = navigation.querySelector(`.nav__link[href="${pathSubstring}"]`);
+  currentLink.classList.add('nav__link--current');
+}
+injectNav();
