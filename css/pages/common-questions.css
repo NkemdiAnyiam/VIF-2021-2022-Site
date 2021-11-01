@@ -57,6 +57,7 @@
 
   height: initial;
   padding: var(--questions__answer-padding);
+  border-bottom: solid 2rem var(--color-tertiary-darkest);
 }
 
 .questions__answer.collapsable.collapsed {
