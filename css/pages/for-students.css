@@ -22,9 +22,10 @@
 }
 
 .companies-list__item:nth-child(even) {
-  background-color: var(--color-gray-lightest);
+  color: var(--color-gray-lightest);
+  background-color: var(--color-tertiary-darkest);
 }
 
 .companies-list__item:nth-child(odd) {
-  background-color: var(--color-primary-lightest);
+  background-color: var(--color-tertiary-lightest);
 }
