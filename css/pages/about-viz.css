@@ -1,0 +1,33 @@
+
+/*****************************************************************/
+/**************************** ABOUT VIZ ****************************/
+/*****************************************************************/
+
+.section-about-viz {
+  grid-area: about-viz;
+}
+.about-viz__programs-list {
+  list-style: none;
+  margin-top: -1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.about-viz__programs-item {
+  padding-left: 2rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.about-viz__programs-item::before {
+  content: "";
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: currentColor;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}

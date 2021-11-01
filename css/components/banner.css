@@ -1,0 +1,41 @@
+/*****************************************************************/
+/**************************** BANNER ****************************/
+/*****************************************************************/
+
+.banner {
+  grid-area: banner;
+  background-color: var(--color-gray-darkest);
+  color: var(--color-tertiary-lightest);
+  display: grid;
+  grid-template-columns: 20fr 80fr;
+  align-content: center;
+}
+
+.banner__logo-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.banner__logo {
+  width: 100%;
+  height: auto;
+}
+
+.banner__text-container {
+  color: var(--color-tertiary-lightest);
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  justify-content: center;
+  padding-left: 6.4rem;
+}
+
+.banner__date {
+  font-size: 2rem;
+}
+
+.banner__fair-text {
+  font-size: 3rem;
+}
