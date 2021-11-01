@@ -1,0 +1,25 @@
+/*****************************************************************/
+/**************************** COLLAPSABLE ****************************/
+/*****************************************************************/
+
+.collapsable {
+  animation-duration: 0.1s;
+  animation-timing-function: ease-out;
+
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.collapsable.expanded {
+  animation-name: expand;
+
+  height: initial;
+  padding: var(--padding-collapsable);
+}
+
+.collapsable.collapsed {
+  animation-name: collapse;
+  height: 0;
+  padding: 0;
+}

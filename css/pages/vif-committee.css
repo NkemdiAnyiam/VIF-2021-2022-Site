@@ -2,9 +2,6 @@
 /**************************** VIF COMMITTEE ****************************/
 /*****************************************************************/
 
-.section-vif-committee {
-}
-
 .committee__blocks {
   display: flex;
   flex-direction: column;
@@ -101,7 +98,7 @@
 }
 
 .committee__description {
-  padding: var(--committee__description-padding);
+  padding: var(--padding-collapsable);
   background-color: var(--color-tertiary-lightest);
 }
 
@@ -113,28 +110,6 @@
   background-color: var(--color-gray-lighter);
 }
 
-.committee__description.collapsable {
-  animation-duration: 0.1s;
-  animation-timing-function: ease-out;
-
-  height: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-.committee__description.collapsable.expanded {
-  animation-name: expand;
-
-  height: initial;
-  padding: var(--committee__description-padding);
-}
-
-.committee__description.collapsable.collapsed {
-  animation-name: collapse;
-  height: 0;
-  padding: 0;
-}
-
 .committee__description.collapsable:not(.expanded) + .committee__social-links {
   /* Remove padding above social links when collapsed */
   padding-top: 0 !important;
@@ -144,56 +119,6 @@
   + .committee__social-links--empty {
   /* Remove ALL padding from empty social links when collapsed */
   padding: 0 !important;
-}
-
-@keyframes collapse {
-  0% {
-    transform: translateY(0);
-    height: 100%;
-    padding: var(--committee__description-padding);
-  }
-
-  100% {
-    padding: var(--committee__description-padding);
-    transform: translateY(-100%);
-  }
-}
-
-@keyframes expand {
-  0% {
-    transform: translateY(-100%);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.expand-btn {
-  width: 38px;
-  height: 15px;
-  margin-right: 0.5rem;
-  background-color: transparent;
-}
-
-.expand-btn:hover {
-  cursor: pointer;
-}
-
-.expand-btn > div {
-  width: 100%;
-  height: 100%;
-  clip-path: polygon(0 100%, 30% 100%, 50% 60%, 70% 100%, 100% 100%, 50% 0);
-  background-color: var(--color-primary-lightest);
-  transition: all 0.1s;
-}
-
-.expand-btn:hover > div {
-  background-color: var(--color-primary-light);
-}
-
-.expand-btn.expand > div {
-  clip-path: polygon(0 0, 30% 0, 50% 40%, 70% 0, 100% 0, 50% 100%);
 }
 
 .committee__description p.indent {

@@ -1,0 +1,30 @@
+/*****************************************************************/
+/**************************** TYPOGRAPHY ****************************/
+/*****************************************************************/
+
+.heading-primary {
+  color: var(--color-primary-dark);
+  font-size: 5rem;
+  margin-bottom: 3.6rem;
+}
+
+.heading-secondary {
+  margin-bottom: 3rem;
+  font-size: 3.6rem;
+}
+
+.heading-tertiary {
+  font-size: 2.4rem;
+}
+
+.link,
+.nav__link {
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: transparent 2px solid;
+  transition: all 0.2s;
+}
+.paragraphs-container p {
+  font-size: 1.8rem;
+  line-height: 1.7;
+}

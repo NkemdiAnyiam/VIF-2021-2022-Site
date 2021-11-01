@@ -1,0 +1,26 @@
+/*****************************************************************/
+/**************************** ANIMATION ****************************/
+/*****************************************************************/
+
+@keyframes collapse {
+  0% {
+    transform: translateY(0);
+    height: 100%;
+    padding: var(--padding-collapsable);
+  }
+
+  100% {
+    padding: var(--padding-collapsable);
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes expand {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
