@@ -5,29 +5,3 @@
 .section-welcome {
 }
 
-.section-companies-list {
-}
-
-.companies-list {
-  list-style: none;
-  font-size: 1.8rem;
-/* 
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); */
-}
-
-.companies-list__item {
-  height: 6rem;
-  padding-left: 1rem;
-
-  display: flex;
-  align-items: center;
-}
-
-.companies-list__item:nth-child(even) {
-  background-color: var(--color-gray-lightest);
-}
-
-.companies-list__item:nth-child(odd) {
-  background-color: var(--color-primary-lightest);
-}
