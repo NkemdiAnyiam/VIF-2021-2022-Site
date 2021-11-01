@@ -2,9 +2,6 @@
 /**************************** FOR STUDENTS ****************************/
 /*****************************************************************/
 
-.section-for-students {
-}
-
 .companies-list {
   list-style: none;
   font-size: 1.8rem;
@@ -16,6 +13,7 @@
 .companies-list__item {
   height: 6rem;
   padding-left: 1rem;
+  line-height: 1.5;
 
   display: flex;
   align-items: center;
