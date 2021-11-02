@@ -5,9 +5,6 @@
 .companies-list {
   list-style: none;
   font-size: 1.8rem;
-/* 
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); */
 }
 
 .companies-list__item {

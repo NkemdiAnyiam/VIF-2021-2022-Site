@@ -3,9 +3,6 @@
 /**************************** ABOUT VIZ ****************************/
 /*****************************************************************/
 
-.section-about-viz {
-  grid-area: about-viz;
-}
 .about-viz__programs-list {
   list-style: none;
   margin-top: -1rem;

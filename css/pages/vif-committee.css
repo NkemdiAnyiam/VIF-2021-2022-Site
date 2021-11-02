@@ -15,7 +15,6 @@
 
 .committee__block-header {
   min-height: 10rem;
-  /* max-height: 10rem; */
   background-color: var(--color-secondary-darkest);
   color: var(--color-gray-lightest);
   padding: 1rem 2rem;
