@@ -97,7 +97,7 @@
 }
 
 .committee__description {
-  padding: var(--padding-collapsable);
+  padding: var(--padding-collapsible);
   background-color: var(--color-tertiary-lightest);
 }
 
@@ -109,12 +109,12 @@
   background-color: var(--color-gray-lighter);
 }
 
-.committee__description.collapsable:not(.expanded) + .committee__social-links {
+.committee__description.collapsible:not(.expanded) + .committee__social-links {
   /* Remove padding above social links when collapsed */
   padding-top: 0 !important;
 }
 
-.committee__description.collapsable:not(.expanded)
+.committee__description.collapsible:not(.expanded)
   + .committee__social-links--empty {
   /* Remove ALL padding from empty social links when collapsed */
   padding: 0 !important;

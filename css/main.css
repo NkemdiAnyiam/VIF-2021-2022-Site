@@ -6,7 +6,7 @@
 @import "./pages/welcome.css";
 
 @import "./components/banner.css";
-@import "./components/collapsable.css";
+@import "./components/collapsible.css";
 @import "./components/expand-btn.css";
 @import "./components/footer.css";
 @import "./components/nav.css";

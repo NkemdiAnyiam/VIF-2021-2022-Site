@@ -37,11 +37,11 @@
 }
 
 .questions__answer {
-  padding: var(--padding-collapsable);
+  padding: var(--padding-collapsible);
   background-color: var(--color-tertiary-lightest);
 }
 
-.questions__answer.collapsable.expanded {
+.questions__answer.collapsible.expanded {
   border-bottom: solid 2rem var(--color-tertiary-darkest);
 }
 

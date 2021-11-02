@@ -7,11 +7,11 @@
   0% {
     transform: translateY(0);
     height: 100%;
-    padding: var(--padding-collapsable);
+    padding: var(--padding-collapsible);
   }
 
   100% {
-    padding: var(--padding-collapsable);
+    padding: var(--padding-collapsible);
     transform: translateY(-100%);
   }
 }

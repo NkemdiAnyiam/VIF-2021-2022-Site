@@ -1,8 +1,8 @@
 /*****************************************************************/
-/**************************** COLLAPSABLE ****************************/
+/**************************** collapsible ****************************/
 /*****************************************************************/
 
-.collapsable {
+.collapsible {
   animation-duration: 0.1s;
   animation-timing-function: ease-out;
 
@@ -11,14 +11,14 @@
   overflow: hidden;
 }
 
-.collapsable.expanded {
+.collapsible.expanded {
   animation-name: expand;
 
   height: initial;
-  padding: var(--padding-collapsable);
+  padding: var(--padding-collapsible);
 }
 
-.collapsable.collapsed {
+.collapsible.collapsed {
   animation-name: collapse;
   height: 0;
   padding: 0;
