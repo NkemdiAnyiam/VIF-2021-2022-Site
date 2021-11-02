@@ -77,7 +77,7 @@ const members = [
   // Chudi Nwokoma
   {
     fullName: 'Chudi Nwokoma',
-    imgSrc: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png',
+    imgSrc: 'imgs/Chudi-Nwokoma_pic-min.png',
     role: 'Logistical support',
     description: `Chudi Nwokoma is a graduate student in the M.S. Visualization program. With a background in Architecture and a Masters in Environmental Design, Chudi has always had a passion for the artistic side of design and is currently focusing on game and feature animation as well as motion capture. An experienced team player and facilitator, he hopes to collaborate and contribute to the gaming and animation industry in the near future.`,
     socialLinks: [
