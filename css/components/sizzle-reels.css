@@ -29,8 +29,12 @@
 .sizzle-reels__loading-notification {
   display: flex;
   gap: 1rem;
-  justify-content: center;
   align-items: center;
+}
+
+.sizzle-reels__loading-text {
+  flex: 1 1;
+  line-height: 1.4;
 }
 
 .sizzle-reels__video {
