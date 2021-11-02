@@ -6,15 +6,18 @@
   color: var(--color-primary-dark);
   font-size: 5rem;
   margin-bottom: 3.6rem;
+  transition: all 0.1s;
 }
 
 .heading-secondary {
   margin-bottom: 3rem;
   font-size: 3.6rem;
+  transition: all 0.1s;
 }
 
 .heading-tertiary {
   font-size: 2.4rem;
+  transition: all 0.1s;
 }
 
 .paragraphs-container p {
@@ -65,4 +68,18 @@ address {
 .link--alt-color-2:hover,
 .link--alt-color-2:active {
   color: var(--color-primary-light);
+}
+
+@media only screen and (max-width: 768px) {
+  .heading-primary {
+    font-size: 4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.2rem;
+  }
 }

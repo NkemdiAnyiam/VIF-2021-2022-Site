@@ -33,6 +33,7 @@
 
 .questions__header .heading-tertiary {
   flex: 1;
+  line-height: 1.4;
 }
 
 .questions__answer {
