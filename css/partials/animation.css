@@ -2,6 +2,7 @@
 /**************************** ANIMATION ****************************/
 /*****************************************************************/
 
+/* expand and collapse */
 @keyframes collapse {
   0% {
     transform: translateY(0);
@@ -22,5 +23,16 @@
 
   100% {
     transform: translateY(0);
+  }
+}
+
+/* rotate */
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }

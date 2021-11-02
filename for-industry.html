@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/styles.css">
 
   <script type="module" defer src="./scripts/global.js"></script>
+  <script type="module" defer src="./scripts/sizzle-reels.js"></script>
 </head>
 
 <body>
@@ -54,20 +55,19 @@
 
             <p><strong>Viz Sizzle Reels</strong></p>
 
-            <iframe src="https://www.youtube.com/embed/zt7IZRzFEV8" allowfullscreen>
-            </iframe>
-
-            <!-- <a href="https://youtu.be/zt7IZRzFEV8" class="link" target="_blank">
-              TAMU Best of Visualization 2021
-            </a> -->
-            <iframe src="https://www.youtube.com/embed/Ixusv-GMrho" allowfullscreen>
-            </iframe>
-
-            <iframe src="https://www.youtube.com/embed/U2Fjr0saMUY" allowfullscreen>
-            </iframe>
-
-            <iframe src="https://www.youtube.com/embed/V-3NX6AHwnY" allowfullscreen>
-            </iframe>
+            <div class="sizzle-reels">
+              <template id="sizzle-reels__reel-container-template">
+                <div class="sizzle-reels__reel-container sizzle-reels__reel-container--loading">
+                  <div class="sizzle-reels__loading-notification">
+                    <div class="spinner"></div>
+                    <p class="loading-text">
+                      Loading <a class="link" href="youtube.com" target="_blank">Video Name</a>
+                    </p>
+                  </div>
+                  <iframe class="sizzle-reels__video sizzle-reels__video--loading" allowfullscreen></iframe>
+                </div>
+              </template>
+            </div>
 
             <article class="paragraphs-container">
               <address>

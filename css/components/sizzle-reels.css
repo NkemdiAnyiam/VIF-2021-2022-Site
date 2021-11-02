@@ -1,0 +1,44 @@
+/*****************************************************************/
+/**************************** SIZZLE REELS ****************************/
+/*****************************************************************/
+
+.sizzle-reels {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.sizzle-reels__reel-container {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  /* trick to maintain aspect ratio of iframe */
+  position: relative;
+  padding-bottom: 56.25%; /* Allows for 16:9 aspect ratio */
+}
+
+.sizzle-reels__reel-container--loading {
+  padding-bottom: 0;
+}
+
+.sizzle-reels__loading-notification {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.sizzle-reels__video {
+  /* trick to maintain aspect ratio */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.sizzle-reels__video--loading {
+  display: none;
+}
