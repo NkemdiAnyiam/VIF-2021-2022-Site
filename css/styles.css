@@ -1,3 +1,5 @@
+@import "./partials/base.css";
+
 @import "./pages/about-viz.css";
 @import "./pages/common-questions.css";
 @import "./pages/for-industry.css";
@@ -14,71 +16,16 @@
 @import "./components/sizzle-reels.css";
 @import "./components/spinner.css";
 
+@import "./layout/layout.css";
+
 @import "./partials/typography.css";
 @import "./partials/animation.css";
 
+@import "./variables/breakpoints.css";
 @import "./variables/colors.css";
 @import "./variables/spacing.css";
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-}
 
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Cabin", sans-serif;
-  font-weight: 400;
-  line-height: 1;
-  font-size: 1.8rem;
-  background-color: var(--color-primary-dark);
-  color: var(--color-gray-darkest);
-}
-
-.container {
-  max-width: 140rem;
-  padding-top: 0;
-  background-color: var(--color-gray-lightest);
-
-  margin: 0 auto;
-  box-shadow: 0 5px 10px #1b000b;
-
-  display: grid;
-  grid-template-columns: 20fr 80fr;
-  row-gap: 3rem;
-  justify-content: center;
-  
-  grid-template-areas:
-    "banner banner"
-    "nav main"
-    "footer footer";
-}
-
-/*****************************************************************/
-/**************************** GENERAL ****************************/
-/*****************************************************************/
-
-address {
-  font-style: normal;
-}
-
-.paragraphs-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1.8rem;
-}
-
-.main {
-  padding: 0 6.4rem;
-  grid-area: main;
-}
 
 
 /*****************************************************************/

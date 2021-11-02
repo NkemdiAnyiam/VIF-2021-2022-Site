@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+
+/* slide on/off */
+@keyframes slide-off {
+  0% {
+    transform: translateX(0);
+    opacity: 0.95;
+  }
+
+  /* Ensures that opacity does not reach 0 until the animation is practically finished */
+  99.999% {
+    opacity: 0.95;
+  }
+
+  100% {
+    /* Move right off the screen */
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slide-on {
+  0% {
+    /* Enter from the right side of the screen */
+    transform: translateX(100%);
+    opacity: 0.95;
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

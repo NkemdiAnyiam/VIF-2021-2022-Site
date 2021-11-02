@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 56.5%;
+  transition: all 0.1s;
+}
+
+body {
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 1.8rem;
+  background-color: var(--color-primary-dark);
+  color: var(--color-gray-darkest);
+}
+
+.container {
+  background-color: var(--color-gray-lightest);
+  box-shadow: 0 5px 10px #1b000b;
+}

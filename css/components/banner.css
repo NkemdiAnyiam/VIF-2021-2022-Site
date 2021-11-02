@@ -9,6 +9,8 @@
   display: grid;
   grid-template-columns: 20fr 80fr;
   align-content: center;
+  
+  transition: all 0.1s;
 }
 
 .banner__logo-container {
@@ -30,12 +32,39 @@
   gap: 10%;
   justify-content: center;
   padding-left: 6.4rem;
+  
+  transition: all 0.1s;
 }
 
 .banner__date {
   font-size: 2rem;
+  transition: all 0.1s;
 }
 
 .banner__fair-text {
   font-size: 3rem;
+  transition: all 0.1s;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner {
+    gap: 3rem;
+    grid-template-columns: 25fr 75fr;
+  }
+
+  .banner__text-container {
+    gap: 1rem;
+    padding: 0;
+  }
+
+}
+
+@media only screen and (max-width: 640px) {
+  .banner__date {
+    font-size: 1.6rem;
+  }
+
+  .banner__fair-text {
+    font-size: 2.4rem;
+  }
 }

@@ -17,6 +17,15 @@
   font-size: 2.4rem;
 }
 
+.paragraphs-container p {
+  font-size: 1.8rem;
+  line-height: 1.7;
+}
+
+address {
+  font-style: normal;
+}
+
 .link,
 .nav__link {
   text-decoration: none;
@@ -56,9 +65,4 @@
 .link--alt-color-2:hover,
 .link--alt-color-2:active {
   color: var(--color-primary-light);
-}
-
-.paragraphs-container p {
-  font-size: 1.8rem;
-  line-height: 1.7;
 }

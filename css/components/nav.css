@@ -32,7 +32,105 @@
   border-bottom: currentColor 2px solid;
 }
 
-.nav__link.nav__link--current {
+.nav__link.nav__link--current:link,
+.nav__link.nav__link--current:visited {
   color: var(--color-gray-light);
   border: none;
+}
+
+.nav__btn {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  /* NAV as a whole */
+  .nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    border-right: none;
+    background-color: var(--color-gray-darkest);
+    z-index: 1000;
+
+    padding: 3rem;
+    display: none; /* Ensures that nav is invisible regardless of user permutations */
+    overflow-y: auto;
+  }
+
+  .nav.nav--collapsed,
+  .nav.nav--expanded {
+    display: initial;
+  }
+
+  .nav.nav--collapsed {
+    transform: translateX(-100%);
+    opacity: 0;
+    animation: slide-off 0.2s ease-out;
+  }
+
+  .nav.nav--expanded {
+    opacity: 0.95;
+    animation: slide-on 0.2s ease-out;
+  }
+
+  /* LIST of links */
+  .nav__list {
+    font-size: 3rem;
+    align-self: initial;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .nav__link:link,
+  .nav__link:visited {
+    color: var(--color-gray-lightest);
+  }
+
+  .nav__link:hover,
+  .nav__link:active {
+    color: var(--color-secondary);
+  }
+
+  /* BUTTON used to expand/collapse */
+  .nav__btn {
+    position: fixed;
+    box-sizing: content-box;
+    
+    width: 3.6rem;
+    height: 3rem;
+    top: 2rem;
+    right: 1rem;
+
+    outline: none;
+    opacity: 50%;
+    color: var(--color-gray-darkest);
+    background-color: currentColor;
+    border-radius: 10px;
+    border: 5px solid currentColor;
+
+    z-index: 1001;
+
+    display: flex; /* Undos the display: none */
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .nav__btn:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .nav__btn--expanded {
+    /* Causes the hamburger to collapse into a straight line */
+    flex-direction: row;
+  }
+
+  .nav__btn div {
+    width: 90%;
+    height: 0.4rem;
+    border-radius: 10px;
+    background-color: var(--color-secondary);
+  }
 }

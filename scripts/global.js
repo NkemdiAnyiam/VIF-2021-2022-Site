@@ -58,7 +58,7 @@ injectFooter();
 
 const injectNav = () => {
   const navigation = document.querySelector('.nav');
-  const pathSubstring = window.location.pathname.substring(window.location.pathname.lastIndexOf('/') + 1)
+  const pathSubstring = window.location.pathname.substring(window.location.pathname.lastIndexOf('/') + 1);
   navigation.insertAdjacentHTML('beforeend', `
     <ul class="nav__list">
       <li class="nav__item"><a href="index.html" class="nav__link">Welcome</a></li>
@@ -71,5 +71,43 @@ const injectNav = () => {
   `);
   const currentLink = navigation.querySelector(`.nav__link[href="${pathSubstring}"]`);
   currentLink.classList.add('nav__link--current');
+
+  navigation.insertAdjacentHTML('beforebegin', `
+    <button class="nav__btn">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+  `);
 }
 injectNav();
+
+window.addEventListener('resize', () => {
+  // If the viewport is wide enough, remove classes associated with the alternate nav
+  if (window.innerWidth >= 768) {
+    const navigation = document.querySelector('.nav');
+    const navButton = document.querySelector('.nav__btn');
+    
+    navigation.classList.remove('nav--expanded');
+    navigation.classList.remove('nav--collapsed');
+    navButton.classList.remove('nav__btn--expanded');
+  }
+});
+
+document.querySelector('.nav__btn').addEventListener('click', () => {
+  const navigation = document.querySelector('.nav');
+  const navButton = document.querySelector('.nav__btn');
+
+  // if not expanded, add 'expanded' and remove 'collapsed'
+  if(!navigation.classList.contains('nav--expanded')) {
+    navigation.classList.add('nav--expanded');
+    navigation.classList.remove('nav--collapsed');
+    navButton.classList.add('nav__btn--expanded');
+  }
+  // otherwise, do the reverse
+  else {
+    navigation.classList.add('nav--collapsed');
+    navigation.classList.remove('nav--expanded');
+    navButton.classList.remove('nav__btn--expanded');
+  }
+});
