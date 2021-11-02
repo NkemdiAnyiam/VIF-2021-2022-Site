@@ -17,10 +17,13 @@
   /* trick to maintain aspect ratio of iframe */
   position: relative;
   padding-bottom: 56.25%; /* Allows for 16:9 aspect ratio */
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .sizzle-reels__reel-container--loading {
   padding-bottom: 0;
+  overflow: initial;
 }
 
 .sizzle-reels__loading-notification {
