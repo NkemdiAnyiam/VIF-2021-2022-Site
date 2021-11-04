@@ -8,8 +8,8 @@
 }
 
 .companies-list__item {
-  height: 6rem;
-  padding-left: 1rem;
+  height: auto;
+  padding: 2rem 1rem;
   line-height: 1.5;
 
   display: flex;
