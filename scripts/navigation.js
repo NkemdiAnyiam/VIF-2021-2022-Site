@@ -14,7 +14,9 @@ const injectNav = () => {
 
   // Use the last part of the URL to determine which link is the "current" link
   const pathSubstring = window.location.pathname.substring(window.location.pathname.lastIndexOf('/') + 1);
-  const currentLink = navigation.querySelector(`.nav__link[href="${pathSubstring}"]`);
+  // Get the <a> whose href matches the ending of the pathname. If not found, default to index.html
+  const currentLink = navigation.querySelector(`.nav__link[href="${pathSubstring}"]`)
+    ?? navigation.querySelector('.nav__link[href="index.html"]');
   currentLink.classList.add('nav__link--current');
 
   // Inject nav button
