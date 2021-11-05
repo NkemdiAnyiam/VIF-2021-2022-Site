@@ -158,7 +158,6 @@ const generateCommitteeBlock = (memberData) => {
 
   socialLinksNode.innerHTML = ''; // clear out template links
   // if list contains no social links, collapse it using .committee__social-links--empty
-  console.log(socialLinks.length);
   if (socialLinks.length == 0) {
     socialLinksNode.classList.add('committee__social-links--empty');
   }
