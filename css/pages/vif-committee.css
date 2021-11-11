@@ -27,6 +27,10 @@
   position: relative;
 }
 
+.committee__block-header:hover {
+  cursor: pointer;
+}
+
 .committee__block-header.committee__block-header--director {
   background-color: var(--color-primary-dark);
 }

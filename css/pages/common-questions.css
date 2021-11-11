@@ -31,6 +31,10 @@
   position: relative;
 }
 
+.questions__header:hover {
+  cursor: pointer;
+}
+
 .questions__header .heading-tertiary {
   flex: 1;
   line-height: 1.4;

@@ -22,7 +22,9 @@
   transition: all 0.1s;
 }
 
-.expand-btn:hover > div {
+.expand-btn:hover > div,
+.questions__header:hover .expand-btn > div,
+.committee__block-header:hover .expand-btn > div {
   background-color: var(--color-primary-light);
 }
 

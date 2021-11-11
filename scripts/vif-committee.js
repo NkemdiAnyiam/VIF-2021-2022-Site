@@ -2,7 +2,7 @@
 
 import {addCollapseFunctionality} from "./utility.js";
 
-addCollapseFunctionality('committee', 'committee__block', 'committee__description');
+addCollapseFunctionality('committee', 'committee__block', 'committee__block-header', 'committee__description');
 
 // for the 'name' attribute in <ion-icon>
 const githubIonIconName = 'logo-github';
