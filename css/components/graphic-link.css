@@ -1,0 +1,69 @@
+/*****************************************************************/
+/**************************** GRAPHIC LINK ****************************/
+/*****************************************************************/
+
+.graphic-links__links-container {
+  display: flex;
+  gap: 3.6rem;
+  transition: all 0.1s;
+}
+
+.graphic-links__link {
+  display: block;
+  width: 16rem;
+  height: 9rem;
+  border-radius: 10px;
+  padding: 0.6rem 1rem;
+  transition: all 0.1s;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.graphic-links__link:link,
+.graphic-links__link:visited {
+  color: var(--color-gray-lightest);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+
+.graphic-links__link--for-students {
+  background-color: var(--color-primary-dark);
+}
+
+.graphic-links__link--for-students:hover,
+.graphic-links__link--for-students:active {
+  color: var(--color-tertiary-light);
+}
+
+.graphic-links__link--for-industry {
+  background-color: var(--color-secondary-darkest);
+}
+
+.graphic-links__link--for-industry:hover,
+.graphic-links__link--for-industry:active {
+  color: var(--color-secondary-light);
+}
+
+.graphic-links__icon {
+  width: 40%;
+  height: auto;
+  transition: all 0.1s;
+}
+
+@media only screen and (max-width: 425px) {
+  .graphic-links__links-container {
+    gap: 1.8rem;
+    flex-direction: column;
+  }
+  
+  .graphic-links__link {
+    padding: 1rem 1.6rem;
+    width: 100%;
+    height: 10rem;
+  }
+}
