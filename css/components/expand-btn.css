@@ -7,6 +7,9 @@
   height: 15px;
   margin-right: 0.5rem;
   background-color: transparent;
+
+  align-self: start;
+  margin-top: 1.4rem;
 }
 
 .expand-btn:hover {
