@@ -37,4 +37,8 @@
     "main"
     "footer";
   }
+
+  .main {
+    padding: 0 5.6rem;
+  }
 }
