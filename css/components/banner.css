@@ -25,6 +25,10 @@
   height: auto;
 }
 
+.banner__logo--no-triangle {
+  display: none;
+}
+
 .banner__text-container {
   color: var(--color-tertiary-lightest);
   display: flex;
@@ -69,16 +73,38 @@
   }
 }
 
-@media only screen and (max-width: 375px) {
+
+@media only screen and (max-width: 425px) {
   .banner {
+    grid-template-columns: 20fr 80fr;
     gap: 2rem;
+    padding: 1rem 0;
   }
-  
-  .banner__date {
-    font-size: 1rem;
+
+  .banner__logo--no-triangle {
+    display: block;
+    padding-left: 1rem;
+  }
+
+  .banner__logo--with-triangle {
+    display: none;
   }
 
   .banner__fair-text {
-    font-size: 1.6rem;
+    font-size: 2.0rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .banner {
+    /* gap: 0.5rem; */
+  }
+  
+  .banner__date {
+    font-size: 1.4rem;
+  }
+
+  .banner__fair-text {
+    font-size: 1.8rem;
   }
 }
