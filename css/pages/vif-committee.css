@@ -19,12 +19,15 @@
   color: var(--color-gray-lightest);
   padding: 1rem 2rem;
   line-height: 1.2;
-
-  display: flex;
-  align-items: center;
-  gap: 5px;
   z-index: 1;
   position: relative;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas:
+    "photo text button";
+  align-items: center;
+  gap: 0.64rem;
 }
 
 .committee__block-header:hover {
@@ -41,6 +44,7 @@
 
 .committee__block-header .committee__photo-container {
   margin-right: 1rem;
+  grid-area: photo;
 
   display: flex;
   align-items: center;
@@ -54,20 +58,25 @@
 }
 
 .committee__header-text {
-  flex: 1;
+  grid-area: text;
+  align-self: start;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 5px;
+  gap: 0.5rem;
 }
 
 .committee__name {
-  flex: 1;
+  transition: all 0.1s;
 }
 
 .committee__role {
   transition: all 0.1s;
+}
+
+.committee__block-header .expand-btn {
+  grid-area: button;
 }
 
 .committee__social-links {
@@ -135,5 +144,13 @@
 @media only screen and (max-width: 768px) {
   .committee__role {
     font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .committee__block-header {
+    grid-template-areas:
+      "photo photo button"
+      "text text text";
   }
 }
