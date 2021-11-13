@@ -46,13 +46,23 @@
 
 .graphic-links__link--for-industry:hover,
 .graphic-links__link--for-industry:active {
-  color: var(--color-secondary-light);
+  color: var(--color-secondary);
 }
 
 .graphic-links__icon {
   width: 40%;
   height: auto;
   transition: all 0.1s;
+}
+
+.graphic-links__link--for-students:hover .graphic-links__icon-fill,
+.graphic-links__link--for-students:active .graphic-links__icon-fill {
+  fill: var(--color-tertiary-dark);
+}
+
+.graphic-links__link--for-industry:hover .graphic-links__icon-fill,
+.graphic-links__link--for-industry:active .graphic-links__icon-fill {
+  fill: var(--color-secondary-dark);
 }
 
 @media only screen and (max-width: 425px) {
