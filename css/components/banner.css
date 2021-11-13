@@ -29,6 +29,18 @@
   display: none;
 }
 
+.banner__logo-v {
+  fill: var(--color-tertiary-darker);
+}
+
+.banner__logo-i {
+  fill: var(--color-tertiary-lightest);
+}
+
+.banner__logo-triangle {
+  fill: var(--color-tertiary-darker);
+}
+
 .banner__text-container {
   color: var(--color-tertiary-lightest);
   display: flex;

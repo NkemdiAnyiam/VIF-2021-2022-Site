@@ -55,10 +55,27 @@
   transition: all 0.1s;
 }
 
+.graphic-links__link--for-students:link .graphic-links__icon-outline,
+.graphic-links__link--for-students:visited .graphic-links__icon-outline,
+.graphic-links__link--for-industry:link .graphic-links__icon-outline,
+.graphic-links__link--for-industry:visited .graphic-links__icon-outline {
+  fill: var(--color-gray-lightest);
+}
+
+.graphic-links__link--for-students:link .graphic-links__icon-fill,
+.graphic-links__link--for-students:visited .graphic-links__icon-fill {
+  fill: var(--color-tertiary);
+}
+
 .graphic-links__link--for-students:hover .graphic-links__icon-fill,
 .graphic-links__link--for-students:active .graphic-links__icon-fill {
   fill: var(--color-tertiary-dark);
 }
+
+.graphic-links__link--for-industry:link .graphic-links__icon-fill,
+.graphic-links__link--for-industry:visited .graphic-links__icon-fill {
+  fill: var(--color-secondary);
+} 
 
 .graphic-links__link--for-industry:hover .graphic-links__icon-fill,
 .graphic-links__link--for-industry:active .graphic-links__icon-fill {
