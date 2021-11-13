@@ -23,6 +23,7 @@
 .banner__logo {
   width: 100%;
   height: auto;
+  display: block;
 }
 
 .banner__logo--no-triangle {
