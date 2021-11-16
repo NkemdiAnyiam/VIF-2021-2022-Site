@@ -1,4 +1,4 @@
-const addCollapseFunctionality = (containerClass, blockClass, controlClass, collapsableClass) => {
+const addCollapseFunctionality = (containerClass, blockClass, controlClass, collapsibleClass) => {
   const container = document.querySelector(`.${containerClass}`);
 
   container.addEventListener('click', (e) => {
@@ -8,17 +8,17 @@ const addCollapseFunctionality = (containerClass, blockClass, controlClass, coll
   
     const block = clicked.closest(`.${blockClass}`);
     const button = block.querySelector('.expand-btn');
-    const collapsable = block.querySelector(`.${collapsableClass}`);
+    const collapsible = block.querySelector(`.${collapsibleClass}`);
 
     // if not expanded, add 'expanded' and remove 'collapsed'
-    if(!collapsable.classList.contains('expanded')) {
-      collapsable.classList.add('expanded');
-      collapsable.classList.remove('collapsed');
+    if(!collapsible.classList.contains('expanded')) {
+      collapsible.classList.add('expanded');
+      collapsible.classList.remove('collapsed');
     }
     // otherwise, do the reverse
     else {
-      collapsable.classList.add('collapsed');
-      collapsable.classList.remove('expanded');
+      collapsible.classList.add('collapsed');
+      collapsible.classList.remove('expanded');
     }
     // toggle button class state
     button.classList.toggle('expand');
