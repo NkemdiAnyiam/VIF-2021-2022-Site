@@ -46,7 +46,7 @@
 
 .graphic-links__link--for-industry:hover,
 .graphic-links__link--for-industry:active {
-  color: var(--color-secondary);
+  color: var(--color-secondary-light);
 }
 
 .graphic-links__icon {
