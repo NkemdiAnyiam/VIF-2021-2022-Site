@@ -13,14 +13,36 @@
   line-height: 1.5;
 
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 0.4rem;
+  justify-items: center;
 }
 
-.companies-list__item:nth-child(even) {
-  color: var(--color-gray-lightest);
+.companies-list--current .companies-list__item:nth-child(even),
+.companies-list--past .companies-list__item:nth-child(even) {
+  color: var(--color-gray-lighter);
+}
+
+.companies-list--current .companies-list__item:nth-child(even) {
   background-color: var(--color-tertiary-darkest);
 }
 
-.companies-list__item:nth-child(odd) {
+.companies-list--current .companies-list__item:nth-child(odd) {
   background-color: var(--color-tertiary-lightest);
+}
+
+.companies-list--past .companies-list__item:nth-child(even) {
+  background-color: var(--color-gray-darkest);
+}
+
+.companies-list--past .companies-list__item:nth-child(odd) {
+  background-color: var(--color-gray-lighter);
+}
+
+.companies-list--current .companies-list__name {
+  font-weight: bold;
+}
+
+.companies-list__focus {
+  font-size: 1.6rem;
 }
