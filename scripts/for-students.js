@@ -1,4 +1,13 @@
-const companies = [
+const companiesPresent = [
+  {companyName: "Jacobs", focus: "Animation"},
+  {companyName: "IMG Studio", focus: "Animation"},
+  {companyName: "K2Share", focus: "Graphic Design"},
+  {companyName: "Blur Studio Inc", focus: "Animation"},
+  {companyName: "BonusXP", focus: "Game Development"},
+  {companyName: "Credera", focus: "Web Development"},
+];
+
+const companiesPast = [
   {companyName: "Aggieland Outfitters"},
   {companyName: "Texas Film Commission"},
   {companyName: "Texas Moving Picture Alliance (TXMPA)"},
@@ -18,20 +27,12 @@ const companies = [
   {companyName: "Cloud Imperium Games"},
 ];
 
-const companies2 = [
-  {companyName: "Jacobs", focus: "Animation"},
-  {companyName: "IMG Studio", focus: "Animation"},
-  {companyName: "K2Share", focus: "Graphic Design"},
-  {companyName: "Blur Studio Inc", focus: "Animation"},
-  {companyName: "BonusXP", focus: "Game Development"},
-];
-
 const companiesNameSortComparator = (company1, company2) => {
   return (company1.companyName <= company2.companyName) ? -1 : 1;
 }
 
-companies.sort(companiesNameSortComparator);
-companies2.sort(companiesNameSortComparator);
+companiesPast.sort(companiesNameSortComparator);
+companiesPresent.sort(companiesNameSortComparator);
 
 const fillCompaniesList = (listClass, list) => {
   const companiesList = document.querySelector(`.${listClass}`);
@@ -45,5 +46,5 @@ const fillCompaniesList = (listClass, list) => {
     `);
   });
 };
-fillCompaniesList('companies-list--current', companies2);
-fillCompaniesList('companies-list--past', companies);
+fillCompaniesList('companies-list--current', companiesPresent);
+fillCompaniesList('companies-list--past', companiesPast);
