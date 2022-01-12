@@ -11,12 +11,6 @@
   margin-top: 2.4rem;
 }
 
-.for-industry__registration-cta p {
-  font-size: 2rem;
-  line-height: 3.6rem;
-  transition: font-size 0.1s;
-}
-
 .for-industry__anticipation-text {
   font-size: 2.4rem;
   font-weight: 600;
@@ -26,11 +20,7 @@
 }
 
 
-@media only screen and (max-width: 425px) {
-  .for-industry__registration-cta p {
-    font-size: 1.8rem;
-  }
-  
+@media only screen and (max-width: 768px) {
   .for-industry__anticipation-text {
     font-size: 2.2rem;
   }
