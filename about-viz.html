@@ -18,7 +18,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
     rel="stylesheet">
 
-    <!-- Styles -->
+  <!-- Styles -->
   <link rel="stylesheet" href="css/main.css">
 
   <!-- Scripts -->
@@ -37,10 +37,10 @@
     </nav>
 
     <main class="main">
-      <section id="section-about-viz" class="section-about-viz">
-        <div class="about-viz">
-          <h1 class="heading-primary">About Viz</h1>
+      <div class="about-viz">
+        <h1 class="heading-primary">About Viz</h1>
 
+        <section id="section-about-viz-intro" class="section-about-viz-intro">
           <div class="paragraphs-container">
             <p>
               The Texas A&M University Visualization Laboratory was established in 1988. The academic program started
@@ -52,9 +52,11 @@
             </p>
 
             <p>
-              Our program has helped develop artists who have gone into fields such as Game Art, Game Design, Technical
+              Our program has helped develop artists who have gone into fields such as Game Art, Game Design,
+              Technical
               Artists,
-              Animation, Surfacing, Production, Tool Development, Rigging, UI/UX, Interactive Design, Graphic Design, AR
+              Animation, Surfacing, Production, Tool Development, Rigging, UI/UX, Interactive Design, Graphic Design,
+              AR
               and VR,
               Visual Computing, and more.
             </p>
@@ -72,32 +74,40 @@
             </ul>
 
             <p>
-              If you would like to check out our students work, below are our 2021 department reels:
-            </p>
-
-            <div class="sizzle-reels">
-              <template id="sizzle-reels__reel-container-template">
-                <div class="sizzle-reels__reel-container sizzle-reels__reel-container--loading">
-                  <div class="sizzle-reels__loading-notification">
-                    <div class="spinner"></div>
-                    <p class="sizzle-reels__loading-text">
-                      Loading <a class="link" href="youtube.com" target="_blank">Video Name</a>
-                    </p>
-                  </div>
-                  <iframe class="sizzle-reels__video sizzle-reels__video--loading" allowfullscreen></iframe>
-                </div>
-              </template>
-            </div>
-
-            <p>
               Our program also sponsors the international game jam Chillennium at Texas A&M University, which is the
               largest student
               run game jam in the world.
               <a href="http://chillennium.com/" class="link" target="_blank">http://chillennium.com/</a>
             </p>
           </div>
-        </div>
-      </section>
+        </section>
+
+
+        <section id="section-about-viz-sizzle-reels" class="section-about-viz-sizzle-reels">
+          <h2 class="heading-secondary">Viz Sizzle Reels</h2>
+
+          <div class="paragraphs-container margin-bm-small">
+            <p>
+              If you would like to check out our students work, below are our 2021 department reels:
+            </p>
+          </div>
+
+          <div class="sizzle-reels">
+            <template id="sizzle-reels__reel-container-template">
+              <div class="sizzle-reels__reel-container sizzle-reels__reel-container--loading">
+                <div class="sizzle-reels__loading-notification">
+                  <div class="spinner"></div>
+                  <p class="sizzle-reels__loading-text">
+                    Loading <a class="link" href="youtube.com" target="_blank">Video Name</a>
+                  </p>
+                </div>
+                <iframe class="sizzle-reels__video sizzle-reels__video--loading" allowfullscreen></iframe>
+              </div>
+            </template>
+          </div>
+        </section>
+
+      </div>
     </main>
 
     <footer class="footer">

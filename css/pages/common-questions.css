@@ -2,10 +2,6 @@
 /**************************** QUESTIONS ****************************/
 /*****************************************************************/
 
-.questions__employer-questions {
-  margin-top: 6rem;
-}
-
 .questions__qa-blocks {
   display: flex;
   flex-direction: column;

@@ -2,11 +2,6 @@
 /**************************** FOR INDUSTRY ****************************/
 /*****************************************************************/
 
-.for-industry section {
-  margin-bottom: 3.6rem;
-  transition: margin-bottom 0.1s;
-}
-
 .for-industry__content {
   display: flex;
   flex-direction: column;
