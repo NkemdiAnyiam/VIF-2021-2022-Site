@@ -73,10 +73,12 @@ address {
 @media only screen and (max-width: 768px) {
   .heading-primary {
     font-size: 4rem;
+    margin-bottom: 3rem;
   }
 
   .heading-secondary {
     font-size: 3rem;
+    margin-bottom: 2rem;
   }
 
   .heading-tertiary {
