@@ -9,3 +9,7 @@
 
   animation:rotate 2s infinite linear;
 }
+
+.spinner--white {
+  background-color: var(--color-gray-lightest);
+}

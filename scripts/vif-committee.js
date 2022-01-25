@@ -145,11 +145,16 @@ const generateCommitteeBlock = (memberData) => {
   const cloneBlock = document.importNode(resultBlockTemplate.content, true);
   const blockHeaderNode = cloneBlock.querySelector('.committee__block-header');
   const photoNode = cloneBlock.querySelector('.committee__photo');
+  const spinner = cloneBlock.querySelector('.spinner');
   const nameNode = cloneBlock.querySelector('.committee__name');
   const roleNode = cloneBlock.querySelector('.committee__role');
   const descriptionNode = cloneBlock.querySelector('.committee__description');
   const socialLinksNode = cloneBlock.querySelector('.committee__social-links');
 
+  photoNode.onload = () => {
+    spinner.remove();
+    photoNode.classList.remove('hidden');
+   }
   photoNode.src = imgSrc;
   photoNode.alt = fullName;
   nameNode.innerHTML = fullName;
