@@ -97,7 +97,7 @@ const members = [
     fullName: 'Akhilesh Vijaykumar',
     imgSrc: 'imgs/Akhilesh-min.jpg',
     role: ' Industry Outreach',
-    description: `Akhilesh Viajykumar is a Graduate student in the Visualization Department at Texas A&M University. He is currently working as a Technical Artist Intern at Electronic Arts (EA).`,
+    description: `Akhilesh Vijaykumar is a former Graduate student in the Visualization Department at Texas A&M University. He is currently working as a Department Technical Director at DreamWorks Animation.`,
     socialLinks: [
       {
         iconName: linkedInIonIconName,
