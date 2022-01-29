@@ -1,0 +1,12 @@
+/*****************************************************************/
+/**************************** REGISTRATION CTA ****************************/
+/*****************************************************************/
+
+.registration-cta {
+  padding: 2rem 1.2rem;
+  width: 100%;
+  background-color: var(--color-primary-dark);
+  color: var(--color-gray-lightest);
+  border-radius: 10px;
+  margin-top: 2.4rem;
+}
