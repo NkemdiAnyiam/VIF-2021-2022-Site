@@ -5,6 +5,7 @@ const companiesPresent = [
   {companyName: "Blur Studio Inc", focus: "Animation"},
   {companyName: "BonusXP", focus: "Game Development"},
   {companyName: "Credera", focus: "Web UI/UX"},
+  {companyName: "Cloud Imperium Games", focus: "Game Development"},
 ];
 
 const companiesPast = [
