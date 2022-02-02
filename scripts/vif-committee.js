@@ -87,7 +87,7 @@ const members = [
       },
       {
         iconName: personalWebsiteIonIconName,
-        link: 'https://www.artstation.com/draegnchu'
+        link: 'https://chudi.squarespace.com/'
       },
     ],
     rank: 'normal'
