@@ -6,7 +6,9 @@ const companiesPresent = [
   {companyName: "BonusXP", focus: "Game Development"},
   {companyName: "Credera", focus: "Web UI/UX"},
   {companyName: "Cloud Imperium Games", focus: "Game Development"},
-  {companyName: "900lbs", focus: "(Unspecified)"},
+  {companyName: "900lbs", focus: "Animation | Graphic Design | Game Development | VFX"},
+  {companyName: "Click Here Labs - TRG", focus: "Animation"},
+  {companyName: "Vytal Studios", focus: "Metaverse Platform Creation"},
 ];
 
 const companiesPast = [
