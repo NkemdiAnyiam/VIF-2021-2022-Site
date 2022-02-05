@@ -9,6 +9,7 @@ const companiesPresent = [
   {companyName: "900lbs", focus: "Animation | Graphic Design | Game Development | VFX"},
   {companyName: "Click Here Labs - TRG", focus: "Animation"},
   {companyName: "Vytal Studios", focus: "Metaverse Platform Creation"},
+  {companyName: "The Third Floor, Inc.", focus: "Film | TV | VR | Games"},
 ];
 
 const companiesPast = [
