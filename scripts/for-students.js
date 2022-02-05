@@ -10,6 +10,7 @@ const companiesPresent = [
   {companyName: "Click Here Labs - TRG", focus: "Animation"},
   {companyName: "Vytal Studios", focus: "Metaverse Platform Creation"},
   {companyName: "The Third Floor, Inc.", focus: "Film | TV | VR | Games"},
+  {companyName: "Mighty Coconut", focus: "Game Development"},
 ];
 
 const companiesPast = [
