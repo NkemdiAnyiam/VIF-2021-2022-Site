@@ -11,6 +11,7 @@ const companiesPresent = [
   {companyName: "Vytal Studios", focus: "Metaverse Platform Creation"},
   {companyName: "The Third Floor, Inc.", focus: "Film | TV | VR | Games"},
   {companyName: "Mighty Coconut", focus: "Game Development"},
+  {companyName: "DreamWorks Animation", focus: "Animation"},
 ];
 
 const companiesPast = [
