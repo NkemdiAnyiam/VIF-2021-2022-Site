@@ -12,6 +12,7 @@ const companiesPresent = [
   {companyName: "The Third Floor, Inc.", focus: "Film | TV | VR | Games"},
   {companyName: "Mighty Coconut", focus: "Game Development"},
   {companyName: "DreamWorks Animation", focus: "Animation"},
+  {companyName: "VIBE", focus: "Architecture Visualization"},
 ];
 
 const companiesPast = [
