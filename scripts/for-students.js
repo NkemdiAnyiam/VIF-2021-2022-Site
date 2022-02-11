@@ -13,6 +13,8 @@ const companiesPresent = [
   {companyName: "Mighty Coconut", focus: "Game Development"},
   {companyName: "DreamWorks Animation", focus: "Animation"},
   {companyName: "VIBE", focus: "Architecture Visualization"},
+  {companyName: "Electronic Arts", focus: "Game Development"},
+  {companyName: "TRG", focus: "Interactive Design"},
 ];
 
 const companiesPast = [
