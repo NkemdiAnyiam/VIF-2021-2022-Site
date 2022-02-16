@@ -15,6 +15,7 @@ const companiesPresent = [
   {companyName: "VIBE", focus: "Architecture Visualization"},
   {companyName: "Electronic Arts", focus: "Game Development"},
   {companyName: "TRG", focus: "Interactive Design"},
+  {companyName: "Cockram Scenario", focus: "Themed Entertainment"},
 ];
 
 const companiesPast = [
