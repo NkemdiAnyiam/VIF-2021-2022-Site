@@ -27,6 +27,29 @@
   background-color: var(--color-tertiary-darkest);
 }
 
+.companies-list--current .companies-list__item .link {
+  padding: 0;
+  width: max-content;
+}
+
+.companies-list--current .companies-list__item:nth-child(even) .link:link,
+.companies-list--current .companies-list__item:nth-child(even) .link:visited {
+  color: unset;
+}
+.companies-list--current .companies-list__item:nth-child(even) .link:hover,
+.companies-list--current .companies-list__item:nth-child(even) .link:active {
+  color: var(--color-tertiary-light);
+}
+
+.companies-list--current .companies-list__item:nth-child(odd) .link:link,
+.companies-list--current .companies-list__item:nth-child(odd) .link:visited {
+  color: unset;
+}
+.companies-list--current .companies-list__item:nth-child(odd) .link:hover,
+.companies-list--current .companies-list__item:nth-child(odd) .link:active {
+  color: var(--color-tertiary-dark);
+}
+
 .companies-list--current .companies-list__item:nth-child(odd) {
   background-color: var(--color-tertiary-lightest);
 }
