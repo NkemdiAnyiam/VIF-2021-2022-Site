@@ -17,6 +17,8 @@ const companiesPresent = [
   {companyName: "TRG", focus: "Interactive Design", url: "https://richards.com/"},
   {companyName: "Cockram Scenario", focus: "Themed Entertainment", url: "https://www.teaconnect.org/Members/Member-Directory/index.cfm?membercode=8255"},
   {companyName: "Virtuix Inc.", focus: "Game Development", url: "https://www.virtuix.com/"},
+  {companyName: "Proteus Games", focus: "Game Development", url: "https://proteusgames.com/"},
+  {companyName: "Sandshark Games", focus: "Game Development", url: "https://www.sandsharkgames.com/"},
 ];
 
 const companiesPast = [
