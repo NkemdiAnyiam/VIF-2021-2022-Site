@@ -20,6 +20,8 @@ const companiesPresent = [
   {companyName: "Proteus Games", focus: "Game Development", url: "https://proteusgames.com/"},
   {companyName: "Sandshark Games", focus: "Game Development", url: "https://www.sandsharkgames.com/"},
   {companyName: "Six Foot", focus: "Game Development", url: "https://6ft.com/"},
+  {companyName: "AEM Creations", focus: "Animation", url: "https://www.aem2create.com/"},
+  {companyName: "Game Worlds", focus: "Game Development", url: "https://gameworldscamp.com/"},
 ];
 
 const companiesPast = [
