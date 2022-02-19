@@ -2,7 +2,7 @@ const companiesPresent = [
   {companyName: "Jacobs", focus: "Animation", url: "http://www.jacobs.com/"},
   {companyName: "IMG Studio", focus: "Animation", url: "https://theimgstudio.com/"},
   {companyName: "K2Share", focus: "Graphic Design", url: "https://www.k2share.com/"},
-  {companyName: "Blur Studio Inc", focus: "Animation", url: "http://blur.com/"},
+  {companyName: "Blur Studio Inc.", focus: "Animation", url: "http://blur.com/"},
   {companyName: "BonusXP", focus: "Game Development", url: "https://bonusxp.com/"},
   {companyName: "Credera", focus: "Web UI/UX", url: "https://credera.com/"},
   {companyName: "Cloud Imperium Games", focus: "Game Development", url: "https://cloudimperiumgames.com/"},
@@ -82,7 +82,7 @@ const filterCompanies = (listClass, list, e) => {
     const newFocus = focus.replace(regExp, match => `<mark>${match}</mark>`);
     return { companyName: newCompanyName, focus: newFocus, url: url }
   });
-  
+
   fillCompaniesList(listClass, newList); // refill the companies list with the subset of companies and with added highlights
 }
 
