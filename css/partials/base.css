@@ -26,7 +26,8 @@ body {
   box-shadow: 0 5px 10px #1b000b;
 }
 
-::selection {
+::selection,
+mark {
   background-color: var(--color-tertiary-dark);
   color: var(--color-gray-lightest)
 }

@@ -65,3 +65,26 @@ const fillCompaniesList = (listClass, list) => {
 };
 fillCompaniesList('companies-list--current', companiesPresent);
 fillCompaniesList('companies-list--past', companiesPast);
+
+
+const filterCompanies = (listClass, list, e) => {
+  const filterString = e.target.value; // string the user entered into input bar
+
+  const newList = list.filter(company => 
+  {
+    // new map should contain items that contain the filter substring
+    return company.companyName.toLowerCase().includes(filterString.toLowerCase()) || company.focus.toLowerCase().includes(filterString.toLowerCase());
+  })
+  .map(({companyName, focus, url}) => {
+    const regExp = new RegExp(filterString, 'gi'); // regular expression for selecting all instances of the substring, case-insensitive
+    // <mark></mark> highlights the substring(s)
+    const newCompanyName = companyName.replace(regExp, match => `<mark>${match}</mark>`);
+    const newFocus = focus.replace(regExp, match => `<mark>${match}</mark>`);
+    return { companyName: newCompanyName, focus: newFocus, url: url }
+  });
+  
+  fillCompaniesList(listClass, newList); // refill the companies list with the subset of companies and with added highlights
+}
+
+const filterBar = document.querySelector('.filter-bar');
+filterBar.addEventListener('input', filterCompanies.bind(null, 'companies-list--current', companiesPresent));
