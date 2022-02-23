@@ -7,6 +7,7 @@ const injectNav = () => {
       <!--<li class="nav__item"><a href="schedule.html" class="nav__link">Schedule</a></li>-->
       <li class="nav__item"><a href="for-students.html" class="nav__link">For Students</a></li>
       <li class="nav__item"><a href="for-industry.html" class="nav__link">For Industry</a></li>
+      <li class="nav__item"><a target="_blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSmbNtzCzrGDnewYitCM4Xw4ldS6FuY_LNPT_gETyTKPHbd9HT5nQMqCGuvgbtYwPihwNe1A-4FrEJ7/pubhtml?gid=1199561687&single=true" class="nav__link">Schedule</a></li>
       <li class="nav__item"><a href="common-questions.html" class="nav__link">Common Questions</a></li>
       <li class="nav__item"><a href="about-viz.html" class="nav__link">About Viz</a></li>
       <li class="nav__item"><a href="vif-committee.html" class="nav__link">VIF Committee</a></li>
