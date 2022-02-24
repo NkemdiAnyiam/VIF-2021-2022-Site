@@ -22,7 +22,7 @@ const companiesPresent = [
   {companyName: "Six Foot", focus: "Game Development", url: "https://6ft.com/"},
   {companyName: "AEM Creations", focus: "Animation", url: "https://www.aem2create.com/"},
   {companyName: "Game Worlds", focus: "Game Development", url: "https://gameworldscamp.com/"},
-  {companyName: "AppLovin", focus: "Game Development", url: "https://www.applovin.com/"},
+  {companyName: "AppLovin", focus: "Technical Art | 2D & 3D Animation/Design", url: "https://www.applovin.com/"},
 ];
 
 const companiesPast = [
