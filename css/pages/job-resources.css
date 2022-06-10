@@ -50,9 +50,7 @@
 }
 
 
-.new-tab-icon {
-  height: 1rem;
-  width: 1rem;
+.job-resources-list--detailed .job-resources-list__item--has-URL .new-tab-icon {
   fill: inherit;
   position: absolute;
   top: 0.75rem;

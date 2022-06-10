@@ -1,3 +1,5 @@
+import { SVG_String_newTabIcon } from "./SVG-strings.js";
+
 const companiesPresent = [
   {companyName: "Jacobs", focus: "Animation", url: "http://www.jacobs.com/"},
   {companyName: "IMG Studio", focus: "Animation", url: "https://theimgstudio.com/"},
@@ -58,7 +60,7 @@ const fillCompaniesList = (listClass, list) => {
   list.forEach(({companyName, focus, url}) => {
     companiesList.insertAdjacentHTML('beforeend', `
       <li class="companies-list__item">
-        ${url ? `<a href="${url}" class="link" target="_blank">` : ''}<span class="companies-list__name">${companyName}</span>${url ? `</a>` : ''}
+        ${url ? `<a href="${url}" class="link" target="_blank">` : ''}<span class="companies-list__name">${companyName}</span>${url ? `${SVG_String_newTabIcon('new-tab-icon')}</a>` : ''}
         ${focus ? `<span class="companies-list__focus">${focus}</span>` : ''}
       </li>
     `);

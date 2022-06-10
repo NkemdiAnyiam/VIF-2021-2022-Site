@@ -63,6 +63,14 @@
   font-size: 1.6rem;
 }
 
+.companies-list--current .new-tab-icon {
+  fill: currentColor;
+  display: inline;
+  position: absolute;
+  top: 0.1rem;
+  right: -1.8rem;
+}
+
 /* STYLINGS FOR PAST COMPANIES */
 .companies-list--past .companies-list__item:nth-child(even) {
   background-color: var(--color-gray-darkest);
@@ -70,4 +78,8 @@
 
 .companies-list--past .companies-list__item:nth-child(odd) {
   background-color: var(--color-gray-lighter);
+}
+
+.companies-list__item .link {
+  position: relative;
 }
