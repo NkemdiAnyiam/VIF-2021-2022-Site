@@ -136,7 +136,7 @@ const fillList = (listClass, list) => {
         }
         ${
           url
-          ? `${SVG_String_newTabIcon}`
+          ? `${SVG_String_newTabIcon('new-tab-icon')}`
           : ''
         }
           <span>${content}</span>
