@@ -34,7 +34,7 @@
 }
 
 .job-resources-list--detailed .job-resources-list__item--has-URL:hover {
-  background-color: var(--color-tertiary-dark);
+  background-color: var(--color-tertiary-darker);
   color: var(--color-tertiary-lightest);
   transition: all 0.2s;
 }
