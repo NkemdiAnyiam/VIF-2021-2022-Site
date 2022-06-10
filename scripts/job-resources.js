@@ -93,7 +93,7 @@ const listDetailed = [
   },
   {
     content: `Nickelodean Internships`,
-    url: `https://www.nickanimation.com/nickelodeon-internship-program`,
+    url: `https://www.nickanimation.com/programs/internship-program/`,
   },
   {
     content: `Game job site`,
