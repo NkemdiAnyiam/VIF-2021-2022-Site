@@ -46,15 +46,15 @@
   height: 100%;
   text-decoration: none;
   color: inherit;
-  padding: 1.5rem 2rem 1.5rem 1rem;
+  padding: 1.5rem 2.25rem 1.5rem 1rem;
 }
 
 
 .job-resources-list--detailed .job-resources-list__item--has-URL .new-tab-icon {
   fill: inherit;
   position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
+  top: 1rem;
+  right: 1rem;
   transition: all 0.2s;
 }
 
