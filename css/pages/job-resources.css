@@ -1,0 +1,65 @@
+/*****************************************************************/
+/**************************** JOB RESOURCES ****************************/
+/*****************************************************************/
+
+.job-resources-list {
+  list-style: none;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.job-resources-list__item {
+  position: relative;
+  height: auto;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding: 1.5rem 1rem;
+  background-color: var(--color-gray-lighter);
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  justify-items: center;
+}
+
+.job-resources-list__item:not(:last-child) {
+  border-bottom: 1px solid var(--color-gray-light);
+}
+
+.job-resources-list--detailed .job-resources-list__item--has-URL {
+  background-color: var(--color-tertiary-lightest);
+  padding: 0;
+}
+
+.job-resources-list--detailed .job-resources-list__item--has-URL:hover {
+  background-color: var(--color-tertiary-dark);
+  color: var(--color-tertiary-lightest);
+  transition: all 0.2s;
+}
+
+
+.job-resources-list__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+  padding: 1.5rem 2rem 1.5rem 1rem;
+}
+
+
+.new-tab-icon {
+  height: 1rem;
+  width: 1rem;
+  fill: inherit;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  transition: all 0.2s;
+}
+
+.job-resources-list--detailed .job-resources-list__item--has-URL:hover .new-tab-icon {
+  fill: var(--color-tertiary-lightest);
+}

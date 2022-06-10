@@ -11,6 +11,7 @@ const injectNav = () => {
       <li class="nav__item"><a href="common-questions.html" class="nav__link">Common Questions</a></li>
       <li class="nav__item"><a href="about-viz.html" class="nav__link">About Viz</a></li>
       <li class="nav__item"><a href="vif-committee.html" class="nav__link">VIF Committee</a></li>
+      <li class="nav__item"><a href="job-resources.html" class="nav__link">Job Resources</a></li>
     </ul>
   `);
 
