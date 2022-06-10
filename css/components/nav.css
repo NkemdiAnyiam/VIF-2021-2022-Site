@@ -75,13 +75,14 @@
 
   /* LIST of links */
   .nav__list {
-    display: grid;
+    height: 100%;
     font-size: 3rem;
+
+    display: grid;
     align-self: initial;
     justify-content: center;
     justify-items: center;
-    grid-template-columns: repeat(autofit, minmax(min-content, max-content));
-    gap: 5rem;
+    gap: unset;
   }
 
   .nav__link:link,
