@@ -6,7 +6,7 @@ const listDetailed = [
     url: `https://www.linkedin.com/groups/13994921/`,
   },
   {
-    content: `A lot of internships, and jobs, are posted on the VIZA-VIST Job page on Facebook.`,
+    content: `A lot of internships and jobs are posted on the VIZA-VIST Job page on Facebook.`,
   },
   {
     content: `Join the Women in Animation on campus group (WIA). They have a Discord channel where they post jobs.`,
@@ -26,7 +26,7 @@ const listDetailed = [
     content: `There is the ADJ Austin (Austin Digital Jobs) group on Facebook.`,
   },
   {
-    content: `The news, for example, Tesla is/was hiring in the Austin and central Texas area. KVUE had an article. Some of the jobs were in Game Dev.`,
+    content: `The news. For example, Tesla is/was hiring in the Austin and central Texas area. KVUE had an article. Some of the jobs were in Game Dev.`,
   },
   {
     content: `Look on company websites, etc.`,
@@ -55,7 +55,7 @@ const listDetailed = [
     url: `https://www.Gamasutra.com`,
   },
   {
-    content: `If you're interested in games, here's a handy map of all of the game companies on the planet, and their URLs by location.`,
+    content: `If you're interested in games, here's a handy map of all of the game companies on the planet and their URLs by location.`,
     url: `https://www.gamedevmap.com/`,
   },
   {
@@ -108,7 +108,7 @@ const listDetailed = [
     url: `http://www.internshipfinder.com/`,
   },
   {
-    content: `The American Institute of Graphic Arts official website has an entire Careers section. This includes a tab exclusively for Internships`,
+    content: `The American Institute of Graphic Arts official website has an entire Careers section. This includes a tab exclusively for Internships.`,
     url: `https://www.aiga.org/`,
   },
   {
@@ -116,7 +116,7 @@ const listDetailed = [
     url: `https://docs.google.com/document/d/1CU1H-8ZQWUPIBrT3VaUjjSMpOrarfpfhI86q8Bkpr_8/edit?fbclid=IwAR3qWkGD7u0l5WzEi5JWCnE6Gg6Q3vSTQaInGhv1jQiTT0PVC_eEAg2_24w`,
   },
   {
-    content: `Texas Film Commission Job Postings Page (This includes jobs from companies all over the state, that are not necessarily associated with the Texas Film Commission).`,
+    content: `Texas Film Commission Job Postings Page (This includes jobs from companies all over the state that are not necessarily associated with the Texas Film Commission).`,
     url: `https://gov.texas.gov/film/hotline`,
   },
 ];
