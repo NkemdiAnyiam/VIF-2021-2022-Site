@@ -2,6 +2,7 @@
 @import "./pages/common-questions.css";
 @import "./pages/for-industry.css";
 @import "./pages/for-students.css";
+@import "./pages/job-resources.css";
 @import "./pages/schedule.css";
 @import "./pages/vif-committee.css";
 @import "./pages/welcome.css";
@@ -9,6 +10,7 @@
 @import "./components/banner.css";
 @import "./components/collapsible.css";
 @import "./components/expand-btn.css";
+@import "./components/filter-bar.css";
 @import "./components/footer.css";
 @import "./components/graphic-link.css";
 @import "./components/nav.css";

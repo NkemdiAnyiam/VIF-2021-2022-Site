@@ -71,36 +71,3 @@
 .companies-list--past .companies-list__item:nth-child(odd) {
   background-color: var(--color-gray-lighter);
 }
-
-
-/* FILTER BAR */
-
-.filter-bar {
-	display: inline-block;
-	padding: 1rem 1rem;
-  width: 50rem;
-
-	font-size: 1.6rem;
-	font-weight: 300;
-
-	background-color: var(--color-gray-lightest);
-	color: var(--color-gray-darkest);
-  box-shadow: inset 0 0 0 1px var(--color-tertiary-light);
-
-  transition: box-shadow 0.1s;
-}
-
-.filter-bar:focus {
-	outline: none;
-	box-shadow: inset 0 0 0 2px var(--color-tertiary-dark);
-}
-
-.filter-bar::placeholder {
-	color: var(--color-gray);
-}
-
-@media only screen and (max-width: 768px) {
-  .filter-bar {
-    width: 100%
-  }
-}
