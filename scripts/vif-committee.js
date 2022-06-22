@@ -121,7 +121,8 @@ const members = [
         iconName: personalWebsiteIonIconName,
         link: 'https://meganhecklinger.myportfolio.com/work'
       },
-    ]
+    ],
+    rank: 'normal'
   },
   // Mayet Andreassen
   {
