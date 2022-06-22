@@ -106,6 +106,23 @@ const members = [
     ],
     rank: 'normal'
   },
+  // Megan Hecklinger
+  {
+    fullName: 'Megan Hecklinger',
+    imgSrc: 'imgs/Hecklinger-Megan_Headshot-min.JPG',
+    role: 'Graphic Designer',
+    description: `Megan is a junior currently working towards her B.S. in Visualization with a focus on interactive and graphic design. She has worked as a graphic designer for Aggieland Outfitters, Aggie Dining, and is currently an intern for HP's New Product Innovation (NPI) Creative Team. Outside of school, Megan loves photography, illustration, and papercrafts`,
+    socialLinks: [
+      {
+        iconName: linkedInIonIconName,
+        link: 'https://www.linkedin.com/in/megan-h-4bb6bbb0/'
+      },
+      {
+        iconName: personalWebsiteIonIconName,
+        link: 'https://meganhecklinger.myportfolio.com/work'
+      },
+    ]
+  },
   // Mayet Andreassen
   {
     fullName: 'Mayet Andreassen',
