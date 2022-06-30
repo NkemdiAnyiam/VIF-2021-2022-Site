@@ -119,6 +119,10 @@ const listDetailed = [
     content: `Texas Film Commission Job Postings Page (This includes jobs from companies all over the state that are not necessarily associated with the Texas Film Commission).`,
     url: `https://gov.texas.gov/film/hotline`,
   },
+  {
+    content: `Global Animation/VFX/Game Industry Job Postings Doc`,
+    url: `https://docs.google.com/spreadsheets/d/1eR2oAXOuflr8CZeGoz3JTrsgNj3KuefbdXJOmNtjEVM/edit?usp=drivesdk`,
+  }
 ];
 
 const fillList = (listClass, list) => {
