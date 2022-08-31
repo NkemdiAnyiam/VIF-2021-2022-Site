@@ -101,7 +101,7 @@ const members = [
     socialLinks: [
       {
         iconName: linkedInIonIconName,
-        link: 'https://www.linkedin.com/in/chukwudi-nwokoma-b0a2066b/'
+        link: 'https://www.linkedin.com/in/chudi-nwokoma-b0a2066b/'
       },
       {
         iconName: personalWebsiteIonIconName,
